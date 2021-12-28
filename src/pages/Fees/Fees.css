@@ -1,0 +1,360 @@
+.fees-container {
+  max-width: 997px;
+  margin: 0 auto;
+}
+
+.fees-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Hero Content */
+.fees-hero {
+  background: #061237;
+  padding: 120px;
+  color: #fff;
+}
+
+.hr {
+  border: solid 2px #1455fe;
+  width: 81px;
+  margin: 0;
+}
+
+.heroContent {
+  width: 488px;
+}
+
+.heroContent h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 80px;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.heroContent p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+/* Main Content */
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1e2029;
+  margin-bottom: 52px;
+  margin-top: 120px;
+}
+
+.contact {
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1e2029;
+}
+
+.contact a {
+  color: #1455fe;
+  border-bottom: 1px solid #1455fe;
+}
+
+/* CARD */
+.feeCard {
+  height: 100%;
+  padding: 40px;
+  background: #fbfaf9;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cardIcon {
+  background: #1455fe;
+  padding: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}
+
+.type {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.6);
+}
+
+.presenter {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  color: #1e2029;
+}
+
+.cardBody {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+  margin: 40px 0;
+}
+
+.cardFooter {
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+}
+
+.cardFooter span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1e2029;
+}
+
+.price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.6);
+}
+
+/* Payment Process */
+.paymentProcess {
+  margin-bottom: 40px;
+}
+
+.paymentTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1e2029;
+}
+
+.paymentTitle span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e2029;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.paymentSubTitle {
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e2029;
+  padding-left: 70px;
+}
+
+.paymentDescription {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+  padding-left: 70px;
+  margin-top: 16px;
+}
+
+.paymentDescription ul li {
+  margin-left: 30px;
+}
+
+.confirmPayment {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmBtn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1455fe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  max-width: 170px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/* Terms And Conditions */
+.fees-terms {
+  margin-bottom: 160px;
+}
+
+.termNavigation nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  background: #fbfaf9;
+  box-shadow: 0px 4px 0px #e9e9ea;
+  padding: 16px 0;
+}
+
+.termNavigation nav ul li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e2029;
+  text-transform: uppercase;
+  padding: 16px 32px;
+}
+
+.termNavigation nav ul li a.active {
+  color: #1455fe;
+  border-bottom: solid 3px #1455fe;
+}
+
+.termsDescription {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+@media (max-width: 600px) {
+  .fees-container {
+    padding: 0 24px;
+  }
+
+  .fees-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .fees-hero {
+    padding: 100px 24px;
+  }
+
+  .heroContent {
+    width: 100%;
+  }
+
+  .heroContent h1 {
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 0;
+  }
+
+  .hr {
+    border: solid 1px #1455fe;
+    width: 81px;
+    margin: 0;
+  }
+
+  .heroContent p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 16px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 80px;
+  }
+
+  .type {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .presenter {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .cardBody {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .cardFooter span {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .price {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .termNavigation nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 60px;
+    overflow: scroll;
+  }
+
+  .paymentTitle span {
+    width: 40px;
+    height: 40px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 5px 15px;
+  }
+
+  .paymentTitle {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .paymentSubTitle {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .paymentDescription {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .termNavigation nav ul li a {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
