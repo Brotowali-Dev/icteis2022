@@ -1,0 +1,1290 @@
+/* HERO SECTION */
+.image-container {
+  width: 720px;
+  height: 674px;
+}
+
+.image-container img {
+  object-fit: cover;
+  background-position: center;
+  width: 720px;
+  height: 674px;
+}
+
+.hero {
+  background: var(--bg-blue);
+  height: 100%;
+  display: flex;
+  gap: 120px;
+  padding-left: 120px;
+  align-items: center;
+}
+
+.hero span {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+/* INFO SECTION */
+.info {
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 120px;
+}
+
+.infoTitle {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  color: rgba(30, 32, 41, 0.6);
+}
+
+.schedule {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.organizer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.infoTime {
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1e2029;
+  margin-top: 6px;
+}
+
+.box {
+  background: #b9edff;
+  color: #ffffff;
+  width: 364px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* OVERVIEW SECTION */
+.overview {
+  height: 772px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 120px;
+}
+
+.about {
+  display: flex;
+  gap: 56px;
+}
+
+.overviewTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e2029;
+}
+
+.overviewBody {
+  width: 386px;
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+}
+
+.overviewImage {
+  width: 364px;
+}
+
+.quickActions {
+  margin-top: 48px;
+}
+
+.quickActions nav ul {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.quickActions nav ul li {
+  margin-top: 12px;
+}
+
+.quickActions a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(30, 32, 41, 0.8);
+}
+
+.overviewImage1 {
+  width: 364px;
+  height: 386px;
+  object-fit: cover;
+}
+
+.overviewImage2 {
+  width: 364px;
+  height: 386px;
+  object-fit: cover;
+}
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1e2029;
+  margin-bottom: 48px;
+}
+
+.notes {
+  margin-top: 100px;
+}
+
+/* SECTION DATES */
+.dates {
+  height: 100%;
+  padding: 100px 204px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dates h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #1e2029;
+  margin-bottom: 16px;
+}
+
+.dates p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  width: 386px;
+  margin-bottom: 52px;
+  text-align: center;
+  color: rgba(30, 32, 41, 0.6);
+}
+
+.dateFlow {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+}
+
+.dateTitleDisable {
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(30, 32, 41, 0.4);
+  margin-bottom: 12px;
+}
+
+.dateDatesDisable {
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.4);
+}
+
+.dateTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e2029;
+  margin-bottom: 12px;
+}
+
+.dateDates {
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+}
+
+/* CALL FOR PAPER SECTION */
+.callForPaper {
+  height: 100%;
+  padding: 100px 120px 120px;
+  background-color: #f4f4f4;
+}
+
+.callForPaper h1 {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1e2029;
+}
+
+.callForPaper p {
+  width: 387px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.6);
+  margin-bottom: 20px;
+}
+
+.detailLink {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #1455fe;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.boxImage {
+  padding: 0px 24px 20px;
+  width: 590px;
+  height: 240px;
+  background: linear-gradient(90deg, #1e2029 0%, rgba(30, 32, 41, 0) 100%),
+    url('../../../public/assets/Hero.svg');
+  border-radius: 2px;
+  position: relative;
+}
+
+.paperTitle {
+  position: absolute;
+  bottom: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.paperDetailLink {
+  position: absolute;
+  bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* SPEAKERS SECTION */
+.speaker {
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 120px 120px;
+}
+
+.speaker h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #1e2029;
+  margin-bottom: 16px;
+}
+
+.speaker p {
+  width: 386px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(30, 32, 41, 0.6);
+  margin-bottom: 48px;
+}
+
+.speakerImage {
+  width: 285px;
+  height: 285px;
+}
+
+.speakerImage img {
+  width: 285px;
+  height: 285px;
+}
+
+.speakerName {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e2029;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.speakerFrom {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+  margin-bottom: 6px;
+}
+
+.speakerDetail {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #1455fe;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* REVIEW SECTION */
+.review {
+  height: 100%;
+  background-color: #f4f4f4;
+  padding: 100px 120px 120px 120px;
+}
+
+.review h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1e2029;
+}
+.review p {
+  width: 386px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.6);
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+.review h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e2029;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+  margin: 16px 0 0 0;
+}
+
+.otherReviewers {
+  margin-bottom: 119px;
+}
+
+.comiteesTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e2029;
+  margin-bottom: 8px;
+}
+
+.comiteesDetail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  margin-top: 16px;
+  color: #8e1b34;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+/* PARTMERSHIP SECTION */
+.partnership {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 209px 120px 209px;
+}
+
+.partnership h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #1e2029;
+}
+
+.partnership p {
+  width: 386px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(30, 32, 41, 0.6);
+  margin-top: 16px;
+  margin-bottom: 55px;
+}
+
+.partnerImage {
+  width: 120px;
+  height: 120px;
+}
+
+.partnerImage img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* =============================== */
+/*          TABLET VERSION         */
+/* =============================== */
+@media only screen and (min-width: 601px) and (max-width: 1049px) {
+  /* HERO SECTION */
+  .hero {
+    height: 744px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--bg-blue);
+  }
+
+  .pow {
+    width: 100%;
+    padding: 40px 32px;
+  }
+
+  .heroSpan {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .heroTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    color: #ffffff;
+    margin: 20px 0 48px 0;
+  }
+
+  .heroImage {
+    height: 372px;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+  }
+
+  .btnSubmit {
+    width: 90px;
+    height: 44px;
+    background: #1e2029;
+    padding: 14px 20px;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  /* INFO SECTION */
+  .info {
+    height: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+  }
+
+  /* OVERVIEW SECTION */
+  .overview {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 0 0;
+  }
+
+  .about {
+    display: flex;
+    gap: 32px;
+    padding: 0 32px;
+  }
+
+  .overviewTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1e2029;
+  }
+
+  .overviewBody {
+    width: 100%;
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(30, 32, 41, 0.8);
+  }
+
+  .overviewImage {
+    width: 100%;
+    display: flex;
+    margin-top: 64px;
+  }
+
+  .quickActions {
+    margin-top: 48px;
+  }
+
+  .quickActions nav ul {
+    list-style: none;
+    margin-top: 16px;
+  }
+
+  .quickActions a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(30, 32, 41, 0.8);
+  }
+
+  .overviewImage1 {
+    width: 100%;
+    height: 298px;
+    object-fit: cover;
+  }
+
+  .overviewImage2 {
+    width: 100%;
+    height: 298px;
+    object-fit: cover;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1e2029;
+    margin-bottom: 48px;
+  }
+
+  .notes {
+    margin-top: 100px;
+  }
+
+  /* SECTION DATES */
+  .dates {
+    height: 100%;
+    padding: 56px 0 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dateFlow {
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+    text-align: center;
+  }
+
+  /* CALL FOR PAPER SECTION */
+  .callForPaper {
+    height: 100%;
+    padding: 56px 32px 68px;
+    background-color: #f4f4f4;
+  }
+
+  /* SPEAKERS SECTION */
+  .speaker {
+    height: 100%;
+    display: block;
+    padding: 56px 32px 68px;
+  }
+  .speaker h1,
+  .speaker p {
+    text-align: left;
+  }
+
+  /* REVIEW SECTION */
+  .review {
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 56px 32px 68px;
+  }
+
+  .review h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1e2029;
+  }
+  .review p {
+    width: 386px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(30, 32, 41, 0.6);
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+
+  .review h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1e2029;
+    margin-bottom: 8px;
+  }
+
+  .name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(30, 32, 41, 0.8);
+    margin: 16px 0 0 0;
+  }
+
+  .otherReviewers {
+    margin-bottom: 119px;
+  }
+
+  .comiteesTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1e2029;
+    margin-bottom: 8px;
+  }
+
+  .comiteesDetail {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    margin-top: 16px;
+    color: #8e1b34;
+    text-transform: uppercase;
+  }
+
+  /* PARTMERSHIP SECTION */
+  .partnership {
+    height: 100%;
+    display: flex;
+    padding: 56px 32px 64px;
+  }
+}
+
+/* =============================== */
+/*          MOBILE VERSION         */
+/* =============================== */
+
+@media (max-width: 600px) {
+  .title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+    margin-bottom: 28px;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    height: 100%;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0 0;
+  }
+
+  .hero-text {
+    padding: 0 24px;
+  }
+
+  .image-container {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+  }
+
+  .image-container img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+  }
+
+  .hero span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 14px 0 0 0;
+  }
+
+  .pow {
+    width: 100%;
+    padding: 24px;
+    height: 340px;
+  }
+
+  /* INFO SECTION */
+  .info {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 24px;
+    width: 100%;
+  }
+
+  .location,
+  .organizer,
+  .schedule {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 24px;
+    border-bottom: 1px solid rgba(30, 32, 41, 0.1);
+  }
+
+  .infoTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(30, 32, 41, 0.6);
+    padding-top: 24px;
+  }
+
+  .infoTime {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e2029;
+    margin-top: 6px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(30, 32, 41, 0.1);
+  }
+
+  .box {
+    background: #b9edff;
+    color: #ffffff;
+    width: 100%;
+    height: 64px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* OVERVIEW SECTION */
+  .overview {
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 46px 0 0;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 24px;
+  }
+
+  .overviewTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1e2029;
+    margin-top: 32px;
+  }
+
+  .overviewBody {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
+  }
+
+  .overviewImage {
+    display: flex;
+    width: 100%;
+    height: 157px !important;
+  }
+
+  .quickActions {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+
+  .quickActions nav ul {
+    list-style: none;
+    margin-top: 16px;
+  }
+
+  .quickActions a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(30, 32, 41, 0.8);
+  }
+
+  .overviewImage1 {
+    width: 100%;
+    height: 157px;
+    object-fit: cover;
+    background-position: center;
+  }
+
+  .overviewImage2 {
+    width: 100%;
+    height: 157px;
+    object-fit: fill;
+  }
+
+  .notes {
+    margin-top: 32px;
+  }
+
+  /* SECTION DATES */
+  .dates {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 56px 24px 64px;
+  }
+
+  .dates h1 {
+    font-family: Satoshi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+    margin-bottom: 12px;
+  }
+
+  .dates p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(30, 32, 41, 0.6);
+    width: 100%;
+    margin-bottom: 32px;
+    text-align: center;
+    color: rgba(30, 32, 41, 0.6);
+  }
+
+  .dateFlow {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    text-align: center;
+  }
+
+  .dateTitleDisable {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e202966;
+    margin-bottom: 10px;
+  }
+
+  .dateDatesDisable {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #1e202966;
+  }
+
+  .dateTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #1e2029;
+    margin-bottom: 10px;
+  }
+
+  .dateDates {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
+  }
+
+  /* CALL FOR PAPER SECTION */
+  .callForPaper {
+    height: 100%;
+    padding: 56px 24px 64px;
+    background-color: #f4f4f4;
+  }
+
+  .callForPaper h1 {
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+  }
+
+  .callForPaper p {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.6);
+    margin-bottom: 22px;
+  }
+
+  .detailLink {
+    font-family: Satoshi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #1455fe;
+    text-transform: uppercase;
+  }
+
+  .boxImage {
+    padding: 0px 24px 20px;
+    width: 100%;
+    height: 186.8px;
+    border-radius: 2px;
+    object-fit: contain;
+    position: relative;
+  }
+
+  .paperTitle {
+    position: absolute;
+    bottom: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  .paperDetailLink {
+    position: absolute;
+    bottom: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  /* SPEAKERS SECTION */
+  .speaker {
+    height: 100%;
+    padding: 56px 24px 72px;
+    display: flex;
+    display: inherit;
+  }
+
+  .speaker h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+    margin-bottom: 12px;
+  }
+
+  .speaker p {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.6);
+    margin-bottom: 28px;
+  }
+
+  .speakerImage {
+    width: 285px;
+    height: 285px;
+  }
+
+  .speakerImage img {
+    width: 285px;
+    height: 285px;
+  }
+
+  .speakerName {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e2029;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .speakerFrom {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
+    margin-bottom: 12px;
+  }
+
+  .speakerDetail {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #1455fe;
+  }
+
+  /* REVIEW SECTION */
+  .review {
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 56px 24px 72px;
+  }
+
+  .review h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+    margin-bottom: 12px;
+  }
+
+  .review p {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.6);
+    margin-bottom: 28px;
+  }
+
+  .review h4 {
+    font-family: Satoshi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e2029;
+    margin-bottom: 16px;
+  }
+
+  .name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
+    margin: 12px 0 0 0;
+  }
+
+  .otherReviewers {
+    margin-bottom: 72px;
+  }
+
+  .advisory {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e2029;
+    margin-bottom: 16px;
+  }
+
+  .comiteesTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e2029;
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+
+  .comiteesDetail {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #8e1b34;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+
+  /* PARTMERSHIP SECTION */
+  .partnership {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 24px 64px;
+  }
+
+  .partnership h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+  }
+
+  .partnership p {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(30, 32, 41, 0.6);
+    margin-top: 12px;
+    margin-bottom: 28px;
+  }
+}
