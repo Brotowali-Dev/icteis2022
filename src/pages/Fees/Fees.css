@@ -22,11 +22,11 @@
   margin: 0;
 }
 
-.heroContent {
+.fees-heroContent {
   width: 488px;
 }
 
-.heroContent h1 {
+.fees-heroContent h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
@@ -35,7 +35,7 @@
   padding-bottom: 10px;
 }
 
-.heroContent p {
+.fees-heroContent p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -253,6 +253,7 @@
   margin-left: 30px;
 }
 
+/* MOBILE VERSION */
 @media (max-width: 600px) {
   .fees-container {
     padding: 0 24px;
@@ -266,17 +267,29 @@
   }
 
   .fees-hero {
-    padding: 100px 24px;
+    background: #061237;
+    padding: 70px 24px;
   }
 
-  .heroContent {
+  .fees-heroContent {
     width: 100%;
   }
 
-  .heroContent h1 {
-    font-size: 24px;
-    line-height: 36px;
-    padding-bottom: 0;
+  .fees-heroContent h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+  }
+
+  .fees-heroContent p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-top: 24px;
   }
 
   .hr {
@@ -285,10 +298,19 @@
     margin: 0;
   }
 
-  .heroContent p {
-    font-size: 14px;
-    line-height: 26px;
-    margin-top: 16px;
+  .cardIcon {
+    background: #1455fe;
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardIcon img {
+    width: 22px;
+    height: 22px;
   }
 
   .title {
@@ -310,6 +332,7 @@
   .cardBody {
     font-size: 14px;
     line-height: 26px;
+    margin: 24px 0;
   }
 
   .cardFooter span {

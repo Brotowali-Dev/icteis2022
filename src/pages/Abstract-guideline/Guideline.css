@@ -247,3 +247,176 @@
   line-height: 28px;
   color: #1455fe;
 }
+
+/* =============================== */
+/*          MOBILE VERSION         */
+/* =============================== */
+
+@media (max-width: 600px) {
+  .guideline-container {
+    padding: 0 24px;
+  }
+
+  .guideline-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .guideline-main {
+    display: flex;
+    gap: 122px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  /* HERO SECTION */
+  .guideline-hero {
+    padding: 70px 24px;
+  }
+
+  .hr {
+    border: solid 1px #1455fe;
+  }
+
+  .guideline-heroContent {
+    width: 100%;
+  }
+
+  .guideline-heroContent h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+
+  .guideline-heroContent p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-top: 24px;
+  }
+
+  /* Guideline Structure */
+  .guideline ul li {
+    margin-left: 24px;
+    margin-bottom: 0;
+  }
+
+  .titleSection {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+    margin-top: 80px;
+    margin-bottom: 24px;
+  }
+
+  .guideline-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
+  }
+
+  /* Payment Process */
+  .paymentProcess {
+    margin-bottom: 60px;
+  }
+
+  .paymentTitle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1e2029;
+  }
+
+  .paymentTitle span {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e2029;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+  }
+
+  .paymentSubTitle {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e2029;
+    padding-left: 70px;
+  }
+
+  .paymentDescription {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
+    padding-left: 70px;
+    margin-top: 16px;
+  }
+
+  .paymentDescription ul li {
+    margin-left: 24px;
+  }
+
+  .confirmPayment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .confirmBtn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1455fe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 170px;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+
+  .contact {
+    margin-top: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #1e2029;
+  }
+
+  .contact a {
+    color: #1455fe;
+    border-bottom: 1px solid #1455fe;
+  }
+}

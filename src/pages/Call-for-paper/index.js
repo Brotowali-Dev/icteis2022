@@ -37,7 +37,8 @@ const CallForPaper = () => {
             <section className='publications'>
               <h2>Energy</h2>
               <p>Publication in Lorem fields</p>
-              <div className='flex justify-between'>
+              {/* adding wrap */}
+              <div className='flex justify-between '>
                 <div>
                   <div className='links'>
                     <img src='/assets/check.svg' alt='check' /> Renewable Energy
@@ -88,7 +89,7 @@ const CallForPaper = () => {
             <section className='publications'>
               <h2>Information Technology & Governance</h2>
               <p>Publication in Lorem fields</p>
-              <div className='flex justify-between'>
+              <div className='flex justify-between '>
                 <div>
                   <div className='links'>
                     <img src='/assets/check.svg' alt='check' /> Renewable Energy
@@ -139,7 +140,7 @@ const CallForPaper = () => {
             <section className='publications'>
               <h2>Artificial Inteligence</h2>
               <p>Publication in Lorem fields</p>
-              <div className='flex justify-between'>
+              <div className='flex justify-between '>
                 <div>
                   <div className='links'>
                     <img src='/assets/check.svg' alt='check' /> Renewable Energy
@@ -190,7 +191,8 @@ const CallForPaper = () => {
             <section className='publications'>
               <h2>Internet Of Things</h2>
               <p>Publication in Lorem fields</p>
-              <div className='flex justify-between'>
+              {/* adding wrap */}
+              <div className='flex justify-between '>
                 <div>
                   <div className='links'>
                     <img src='/assets/check.svg' alt='check' /> Renewable Energy
