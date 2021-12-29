@@ -174,3 +174,142 @@
   line-height: 24px;
   color: #ffffff;
 }
+
+/* =============================== */
+/*          MOBILE VERSION         */
+/* =============================== */
+
+@media (max-width: 600px) {
+  .call-for-paper-container {
+    margin: 70px auto;
+    padding: 0 24px;
+  }
+
+  /* HERO SECTION */
+  .call-for-paper-hero {
+    padding: 70px 24px;
+  }
+
+  .hr {
+    border: solid 1px #1455fe;
+  }
+
+  .heroContent {
+    width: 100%;
+  }
+
+  .heroContent h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+
+  .heroContent p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-top: 24px;
+  }
+
+  /* MAIN */
+  .main {
+    max-width: 691px;
+  }
+
+  .main p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #929292;
+    margin-bottom: 18px;
+  }
+
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #929292;
+    margin-bottom: 50px;
+  }
+
+  /* PUBLICATIONS */
+  .publications {
+    margin-top: 90px;
+  }
+
+  .publications h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+    margin-bottom: 8px;
+  }
+
+  .publications p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
+    margin-bottom: 25px;
+  }
+
+  /* CARD SUBMIT YOUR PAPER */
+  .cardContainer {
+    width: 100% !important;
+    padding: 0 24px;
+  }
+
+  .card img {
+    width: 100% !important;
+  }
+
+  .card {
+    background: #e8e9ea;
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    flex-direction: column-reverse;
+    gap: 32px !important;
+    height: 100%;
+    padding: 24px !important;
+  }
+
+  .cardTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    color: #1e2029;
+    margin-bottom: 18px !important;
+  }
+
+  .cardDescription {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 26px !important;
+    color: rgba(30, 32, 41, 0.8);
+    margin-bottom: 40px !important;
+  }
+
+  .cardbtn {
+    max-width: 100%;
+    padding: 16px 40px;
+    background: #1455fe;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+}

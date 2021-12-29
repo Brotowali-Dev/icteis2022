@@ -89,7 +89,8 @@ aside {
   line-height: 28px;
   color: #1e2029;
 }
-.container {
+
+.publication-container {
   max-width: 1200px;
   margin: 120px auto 0;
 }
@@ -118,7 +119,7 @@ aside {
   color: #1e2029;
 }
 
-.text {
+.publication-text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -207,12 +208,52 @@ aside {
   color: #1e2029;
 }
 
+/* =============================== */
+/*          MOBILE VERSION         */
+/* =============================== */
+
 @media (max-width: 600px) {
   .publication-hero {
-    padding: 120px 24px 120px 24px;
+    padding: 70px 24px;
+  }
+  .publication-hero h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+  }
+  .subTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1e2029;
+  }
+  .publication-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
+  }
+  .publication-container {
+    margin: 120px auto 0;
+    padding: 0 24px;
   }
   .publicationCard {
     display: flex;
     flex-direction: column;
+  }
+  .publicationTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e2029;
+  }
+  .publicationLink {
+    font-size: 14px;
+    line-height: 26px;
   }
 }

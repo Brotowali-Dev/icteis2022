@@ -6,11 +6,13 @@ const Publication = () => {
       <div className='publication-hero'>
         <h1>Publication</h1>
       </div>
-      <div className='container' id='publicationPage'>
+      <div className='publication-container' id='publicationPage'>
         <div id='publication'>
           <article>
             <h2 className='subTitle'>Combined Engineering</h2>
-            <p className='text'>Publication in Combined Engineering fields</p>
+            <p className='publication-text'>
+              Publication in Combined Engineering fields
+            </p>
             <div className='publicationCard'>
               <div className='cardImage'>
                 <img src='/assets/publication.svg' alt='publication' />

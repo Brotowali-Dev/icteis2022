@@ -4,7 +4,7 @@ const Fees = () => {
   return (
     <div>
       <div className='fees-hero'>
-        <div className='heroContent'>
+        <div className='fees-heroContent'>
           <h1>Fees and Payment Policies</h1>
           <hr className='hr' />
           <p>
