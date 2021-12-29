@@ -72,7 +72,7 @@ const Homepage = () => {
       <section className='overview'>
         <div className='about'>
           <div>
-            <h1 className='title'>Overview</h1>
+            <h1 className='overview-title'>Overview</h1>
             <div className='overviewTitle'>About ICTEIS 2022</div>
             <div className='overviewBody'>
               Held as part of the Universitas Gadjah Mada Annual Scientific
@@ -80,12 +80,7 @@ const Homepage = () => {
               on Science and Technology (ICST 2021) provides an ideal academic
               platform for researchers to present the latest research findings
               and describe emerging technologies and directions in engineering
-              and the natural sciences. This year, five symposia will be held,
-              Computer and Information Technology symposium; Electronics, Power,
-              Communication, Control, and Instrumentation symposium; Life
-              Sciences, Materials, and Applied Chemistry symposium; Mechanical
-              and Industrial Engineering symposium; Remote Sensing and Geomatics
-              symposium.
+              and the natural sciences.
             </div>
           </div>
           <div className='notes'>
