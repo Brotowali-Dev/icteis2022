@@ -34,7 +34,7 @@ export default function Navbar() {
         <nav className='desktop'>
           <ul>
             <li>
-              <a href='#'>Conference</a>
+              <a href='/#'>Conference</a>
             </li>
             <li>
               <div
@@ -43,9 +43,9 @@ export default function Navbar() {
               >
                 Submission{' '}
                 {isClicked ? (
-                  <img src='/assets/megaArrow.svg' alt='mega arrow' />
+                  <img src='/assets/megaArrow.svg' alt='megaarrow' />
                 ) : (
-                  <img src='/assets/megaArrow.svg' alt='mega arrow' />
+                  <img src='/assets/megaArrow.svg' alt='megaarrow' />
                 )}
               </div>
             </li>
@@ -57,7 +57,7 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
-        <a href='#' className='submit-btn desktop'>
+        <a href='/#' className='submit-btn desktop'>
           Submit
         </a>
 
@@ -71,9 +71,9 @@ export default function Navbar() {
             className='hamburger-menu'
           >
             {isClicked ? (
-              <img src='/assets/close.svg' alt='hamburger menu' />
+              <img src='/assets/close.svg' alt='hamburgermenu' />
             ) : (
-              <img src='/assets/hamburger-menu.svg' alt='hamburger menu' />
+              <img src='/assets/hamburger-menu.svg' alt='hamburgermenu' />
             )}
           </div>
         </div>
@@ -125,23 +125,23 @@ export default function Navbar() {
             </div>
             <div className='col bg-grey'>
               <h3>Download Docs</h3>
-              <a className='links' href='#'>
+              <a className='links' href='/#'>
                 <img src='/assets/pdfdownload.svg' alt='icon' />
                 All Docs
               </a>
-              <a className='links' href='#'>
+              <a className='links' href='/#'>
                 <img src='/assets/pdfdownload.svg' alt='icon' />
                 All Guideline
               </a>
-              <a className='links' href='#'>
+              <a className='links' href='/#'>
                 <img src='/assets/pdfdownload.svg' alt='icon' />
                 Article Preparation
               </a>
-              <a className='links' href='#'>
+              <a className='links' href='/#'>
                 <img src='/assets/pdfdownload.svg' alt='icon' />
                 Paper Template
               </a>
-              <a className='links' href='#'>
+              <a className='links' href='/#'>
                 <img src='/assets/pdfdownload.svg' alt='icon' />
                 Copyright Checklist
               </a>
@@ -154,7 +154,7 @@ export default function Navbar() {
             Publication
           </Link>
           <div className='p-24'>
-            <a href='#' className='btn-submit '>
+            <a href='/#' className='btn-submit '>
               <div className='btn-content '>
                 submit paper
                 <div className='btn-content-child'>
@@ -195,23 +195,23 @@ export default function Navbar() {
           </div>
           <div className='col bg-grey'>
             <h3>Download Docs</h3>
-            <a className='links' href='#'>
+            <a className='links' href='/#'>
               <img src='/assets/pdfdownload.svg' alt='icon' />
               All Docs
             </a>
-            <a className='links' href='#'>
+            <a className='links' href='/#'>
               <img src='/assets/pdfdownload.svg' alt='icon' />
               All Guideline
             </a>
-            <a className='links' href='#'>
+            <a className='links' href='/#'>
               <img src='/assets/pdfdownload.svg' alt='icon' />
               Article Preparation
             </a>
-            <a className='links' href='#'>
+            <a className='links' href='/#'>
               <img src='/assets/pdfdownload.svg' alt='icon' />
               Paper Template
             </a>
-            <a className='links' href='#'>
+            <a className='links' href='/#'>
               <img src='/assets/pdfdownload.svg' alt='icon' />
               Copyright Checklist
             </a>

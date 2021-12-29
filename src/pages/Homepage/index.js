@@ -9,7 +9,7 @@ const Homepage = () => {
           <span>the 1st</span>
           <h1>International Conference of Technology and Information System</h1>
           <div>
-            <a href='#' className='btn-primary'>
+            <a href='/#' className='btn-primary'>
               <div className='btn-content'>
                 submit paper
                 <div className='btn-content-child'>
@@ -20,7 +20,7 @@ const Homepage = () => {
             </a>
           </div>
           <div>
-            <a href='#' className='btn-secondary'>
+            <a href='/#' className='btn-secondary'>
               <div className='btn-content'>
                 call for paper
                 <div className='btn-content-child'>
@@ -32,7 +32,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className='image-container'>
-          <img src='/assets/hero.svg' alt='hero image' />
+          <img src='/assets/hero.svg' alt='heroSatu' />
         </div>
       </section>
       {/* END HERO */}
@@ -97,19 +97,19 @@ const Homepage = () => {
               <nav>
                 <ul>
                   <li>
-                    <a href='#'>
+                    <a href='/#'>
                       <img src='/assets/callforpaper.svg' alt='icon' /> Call For
                       Paper
                     </a>
                   </li>
                   <li>
-                    <a href='#'>
+                    <a href='/#'>
                       <img src='/assets/downloaddocs.svg' alt='icon' />
                       Download All Docs
                     </a>
                   </li>
                   <li>
-                    <a href='#'>
+                    <a href='/#'>
                       <img src='/assets/mail.svg' alt='icon' />
                       Email Organizer
                     </a>
@@ -125,7 +125,7 @@ const Homepage = () => {
             <img
               className='overviewImage1'
               src='assets/hero.svg'
-              alt='images'
+              alt='gambarSatu'
             />
           </div>
           <div className='overviewImage2'>
@@ -133,7 +133,7 @@ const Homepage = () => {
             <img
               className='overviewImage1'
               src='assets/hero.svg'
-              alt='images'
+              alt='gambarDua'
             />
           </div>
         </div>
@@ -213,20 +213,20 @@ const Homepage = () => {
           Conferences (UASC 2021) series
         </p>
 
-        <a href='#' className='detailLink'>
+        <a href='/#' className='detailLink'>
           see detail <img src='/assets/arrowRight.svg' alt='arrowRight' />
         </a>
 
         <div className='flex flex-mobile gap-20 mt-48'>
           <div className='boxImage'>
             <div className='paperTitle'>Artificial Intelligence</div>
-            <a href='#' className='paperDetailLink'>
+            <a href='/#' className='paperDetailLink'>
               See Detail <img src='/assets/chevron-right.svg' alt='arrow' />
             </a>
           </div>
           <div className='boxImage'>
             <div className='paperTitle'>Artificial Intelligence</div>
-            <a href='#' className='paperDetailLink'>
+            <a href='/#' className='paperDetailLink'>
               See Detail
               <img src='/assets/chevron-right.svg' alt='arrow' />
             </a>
@@ -236,21 +236,21 @@ const Homepage = () => {
         <div className='flex flex-mobile mt-20 gap-20'>
           <div className='boxImage'>
             <div className='paperTitle'>Artificial Intelligence</div>
-            <a href='#' className='paperDetailLink'>
+            <a href='/#' className='paperDetailLink'>
               See Detail
               <img src='/assets/chevron-right.svg' alt='arrow' />
             </a>
           </div>
           <div className='boxImage'>
             <div className='paperTitle'>Artificial Intelligence</div>
-            <a href='#' className='paperDetailLink'>
+            <a href='/#' className='paperDetailLink'>
               See Detail
               <img src='/assets/chevron-right.svg' alt='arrow' />
             </a>
           </div>
           <div className='boxImage'>
             <div className='paperTitle'>Artificial Intelligence</div>
-            <a href='#' className='paperDetailLink'>
+            <a href='/#' className='paperDetailLink'>
               See Detail
               <img src='/assets/chevron-right.svg' alt='arrow' />
             </a>
@@ -273,7 +273,7 @@ const Homepage = () => {
             </div>
             <div className='speakerName'>Goerge Washington, M.Cs.</div>
             <div className='speakerFrom'>Goerge Washington, M.Cs.</div>
-            <a href='#' className='speakerDetail'>
+            <a href='/#' className='speakerDetail'>
               SEE DETAIL <img src='/assets/arrowRight.svg' alt='arrowRight' />
             </a>
           </div>
@@ -284,7 +284,7 @@ const Homepage = () => {
             </div>
             <div className='speakerName'>Goerge Washington, M.Cs.</div>
             <div className='speakerFrom'>Goerge Washington, M.Cs.</div>
-            <a href='#' className='speakerDetail'>
+            <a href='/#' className='speakerDetail'>
               SEE DETAIL <img src='/assets/arrowRight.svg' alt='arrowRight' />
             </a>
           </div>
@@ -295,7 +295,7 @@ const Homepage = () => {
             </div>
             <div className='speakerName'>Goerge Washington, M.Cs.</div>
             <div className='speakerFrom'>Goerge Washington, M.Cs.</div>
-            <a href='#' className='speakerDetail'>
+            <a href='/#' className='speakerDetail'>
               SEE DETAIL <img src='/assets/arrowRight.svg' alt='arrowRight' />
             </a>
           </div>
@@ -306,7 +306,7 @@ const Homepage = () => {
             </div>
             <div className='speakerName'>Goerge Washington, M.Cs.</div>
             <div className='speakerFrom'>Goerge Washington, M.Cs.</div>
-            <a href='#' className='speakerDetail'>
+            <a href='/#' className='speakerDetail'>
               SEE DETAIL <img src='/assets/arrowRight.svg' alt='arrowRight' />
             </a>
           </div>
@@ -325,7 +325,7 @@ const Homepage = () => {
             </div>
             <div className='speakerName'>Goerge Washington, M.Cs.</div>
             <div className='speakerFrom'>Goerge Washington, M.Cs.</div>
-            <a href='#' className='speakerDetail'>
+            <a href='/#' className='speakerDetail'>
               SEE DETAIL <img src='/assets/arrowRight.svg' alt='arrowRight' />
             </a>
           </div>
@@ -336,7 +336,7 @@ const Homepage = () => {
             </div>
             <div className='speakerName'>Goerge Washington, M.Cs.</div>
             <div className='speakerFrom'>Goerge Washington, M.Cs.</div>
-            <a href='#' className='speakerDetail'>
+            <a href='/#' className='speakerDetail'>
               SEE DETAIL <img src='/assets/arrowRight.svg' alt='arrowRight' />
             </a>
           </div>
@@ -347,7 +347,7 @@ const Homepage = () => {
             </div>
             <div className='speakerName'>Goerge Washington, M.Cs.</div>
             <div className='speakerFrom'>Goerge Washington, M.Cs.</div>
-            <a href='#' className='speakerDetail'>
+            <a href='/#' className='speakerDetail'>
               SEE DETAIL <img src='/assets/arrowRight.svg' alt='arrowRight' />
             </a>
           </div>
@@ -358,7 +358,7 @@ const Homepage = () => {
             </div>
             <div className='speakerName'>Goerge Washington, M.Cs.</div>
             <div className='speakerFrom'>Goerge Washington, M.Cs.</div>
-            <a href='#' className='speakerDetail'>
+            <a href='/#' className='speakerDetail'>
               SEE DETAIL <img src='/assets/arrowRight.svg' alt='arrowRight' />
             </a>
           </div>

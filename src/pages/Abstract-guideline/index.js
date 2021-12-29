@@ -64,7 +64,7 @@ const AbstractGuideline = () => {
                 </ul>
                 <div className='confirmPayment'>
                   After that, you can confirm your payment here:
-                  <a href='#' className='confirmBtn'>
+                  <a href='/#' className='confirmBtn'>
                     Confirm my Payment
                   </a>
                 </div>
@@ -83,7 +83,7 @@ const AbstractGuideline = () => {
                 abstract via an email within three working days.
                 <div className='contact'>
                   Have any questions about the the instruction?{' '}
-                  <a href='#'>Contact us</a>
+                  <a href='/#'>Contact us</a>
                 </div>
               </div>
             </div>

@@ -100,7 +100,7 @@ const Fees = () => {
             </ul>
             <div className='confirmPayment'>
               After that, you can confirm your payment here:
-              <a href='#' className='confirmBtn'>
+              <a href='/#' className='confirmBtn'>
                 Confirm my Payment
               </a>
             </div>
@@ -123,7 +123,7 @@ const Fees = () => {
             payment.
             <div className='contact'>
               Have any questions about the the instruction?{' '}
-              <a href='#'>Contact us</a>
+              <a href='/#'>Contact us</a>
             </div>
           </div>
         </div>
@@ -136,18 +136,18 @@ const Fees = () => {
             <nav>
               <ul>
                 <li>
-                  <a className='active' href='#'>
+                  <a className='active' href='/#'>
                     Registration
                   </a>
                 </li>
                 <li>
-                  <a href='#'>payment</a>
+                  <a href='/#'>payment</a>
                 </li>
                 <li>
-                  <a href='#'>participant</a>
+                  <a href='/#'>participant</a>
                 </li>
                 <li>
-                  <a href='#'>earlybid</a>
+                  <a href='/#'>earlybid</a>
                 </li>
               </ul>
             </nav>
@@ -242,7 +242,7 @@ const Fees = () => {
               </ul>
               <div className='contact'>
                 Have any questions about the the instruction?{' '}
-                <a href='#'>Contact us</a>
+                <a href='/#'>Contact us</a>
               </div>
             </div>
           </div>

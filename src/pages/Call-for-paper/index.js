@@ -247,21 +247,21 @@ const CallForPaper = () => {
               <nav>
                 <ul>
                   <li className='active'>
-                    <a className='active' href='#'>
+                    <a className='active' href='/#'>
                       Engineering
                     </a>
                   </li>
                   <li>
-                    <a href='#'>Computer Engineering</a>
+                    <a href='/#'>Computer Engineering</a>
                   </li>
                   <li>
-                    <a href='#'>Electrical Engineering</a>
+                    <a href='/#'>Electrical Engineering</a>
                   </li>
                   <li>
-                    <a href='#'>Civil Engineering</a>
+                    <a href='/#'>Civil Engineering</a>
                   </li>
                   <li>
-                    <a href='#'>Mechanic Engineering</a>
+                    <a href='/#'>Mechanic Engineering</a>
                   </li>
                 </ul>
               </nav>
