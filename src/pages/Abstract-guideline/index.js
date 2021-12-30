@@ -1,4 +1,5 @@
 import './Guideline.css';
+import { Link } from 'react-router-dom';
 
 const AbstractGuideline = () => {
   return (
@@ -121,19 +122,25 @@ const AbstractGuideline = () => {
               <img src='/assets/copylink.svg' alt='copylink' /> Copy Link
             </div>
             <div className='linksTitle'>Other Guideline</div>
-            <div className='guideline-links'>
-              <img src='/assets/abstract.svg' alt='copylink' /> Abstract
-            </div>
-            <div className='guideline-links'>
+            <Link to='/full-paper-guideline' className='guideline-links'>
               <img src='/assets/Frame.svg' alt='copylink' /> Full Paper
-            </div>
-            <div className='guideline-links'>
+            </Link>
+            <Link to='/presentation-guideline' className='guideline-links'>
               <img src='/assets/fresentation.svg' alt='copylink' /> Presentation
-            </div>
+            </Link>
             <div className='linksTitle'>Download Docs</div>
-            <div className='guideline-links'>Docs 1</div>
-            <div className='guideline-links'>Docs 2</div>
-            <div className='guideline-links'>Docs 3</div>
+            <a href='/#' className='guideline-links'>
+              All Guideline
+            </a>
+            <a href='/#' className='guideline-links'>
+              Article Preparation
+            </a>
+            <a href='/#' className='guideline-links'>
+              Paper Template
+            </a>
+            <a href='/#' className='guideline-links'>
+              Copyright Checklist
+            </a>
           </div>
         </div>
       </div>

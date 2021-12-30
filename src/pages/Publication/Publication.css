@@ -133,6 +133,12 @@ aside {
   gap: 40px;
 }
 
+.publicationCard .cardImage img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
 .publicationDescription {
   padding: 28px;
   background: #fbfaf9;
