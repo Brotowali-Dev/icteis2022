@@ -10,24 +10,12 @@ import { LOAD_INFO_OVERVIEW } from '../../graphql/queries';
 import Speakers from '../../components/Speakers';
 import Reviewers from '../../components/Reviewers';
 import CallForPaper from '../../components/CallForPaper';
+import Loading from '../../components/Loading';
 
 const Homepage = () => {
   const { loading, error, data } = useQuery(LOAD_INFO_OVERVIEW);
   if (error) return <h1>Error</h1>;
-  if (loading)
-    return (
-      <h1
-        style={{
-          height: '100vh',
-          width: '100vw',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        Loading...
-      </h1>
-    );
+  if (loading) return <Loading />;
   const datas = data.landingPages[0];
   return (
     <div>

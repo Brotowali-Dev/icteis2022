@@ -234,3 +234,171 @@ export const LOAD_JOURNAL = gql`
     }
   }
 `;
+
+export const LOAD_FEES = gql`
+  query getFees {
+    feesPages {
+      title
+      deskripsi
+      type1
+      deskripsiType1
+      biayaType1
+      type2
+      deskripsiType2
+      biayaType2
+      paymentInstruction1
+      deskripsiPaymentInstruction1 {
+        html
+      }
+      paymentInstruction2
+      deskripsiPaymentInstruction2 {
+        html
+      }
+      paymentInstruction3
+      deskripsiPaymentInstruction3 {
+        html
+      }
+    }
+  }
+`;
+
+export const LOAD_ABSTRACT = gql`
+  query getAbstract {
+    abstractGuidelines {
+      title
+      deskripsi
+      guidelineStructure {
+        html
+      }
+      submissionStep1
+      submissionStepDeksripsi1 {
+        html
+      }
+      submissionStep2
+      submissionStepDeksripsi2 {
+        html
+      }
+      reviewProcessDeskripsi {
+        html
+      }
+      downloadGuideline
+      download {
+        url
+      }
+      downloadAllGuideline {
+        url
+      }
+    }
+  }
+`;
+
+export const LOAD_PRESENTATION = gql`
+  query getPresentation {
+    presentationGuidelines {
+      title
+      deskripsi
+      guidelineStructure {
+        html
+      }
+      submissionStep1
+      submissionStep2
+      submissionStepDeksripsi1 {
+        html
+      }
+      submissionStepDeksripsi2 {
+        html
+      }
+      reviewProcessDeskripsi {
+        html
+      }
+      downloadAbstractGuideline
+      download {
+        url
+      }
+      downloadAllGuideline {
+        url
+      }
+    }
+  }
+`;
+
+export const LOAD_FULL_PAPER = gql`
+  query getFullPaper {
+    fullPaperGudelines {
+      title
+      deskripsi
+      guidelineStructure {
+        html
+      }
+      submissionStep1
+      submissionStep2
+      submissionStepDeksripsi1 {
+        html
+      }
+      submissionStepDeksripsi2 {
+        html
+      }
+      reviewProcessDeskripsi {
+        html
+      }
+      downloadAbstractGuideline
+      download {
+        url
+      }
+      downloadAllGuideline {
+        url
+      }
+    }
+  }
+`;
+
+export const LOAD_CALL_FOR_PAPER = gql`
+  query getCallForPaper {
+    callForPapers {
+      title
+      deskripsi
+      penjelasan
+      judul1
+      deskripsi1
+      energy1
+      energy2
+      energy3
+      energy4
+      energy5
+      energy6
+      energy7
+      energy8
+      judul2
+      deskripsi2
+      it1
+      it2
+      it3
+      it4
+      it5
+      it6
+      it7
+      it8
+      judul3
+      deskripsi3
+      ai1
+      ai2
+      ai3
+      ai4
+      ai5
+      ai6
+      ai7
+      ai8
+      judul4
+      deskripsi4
+      iot1
+      iot2
+      iot3
+      iot4
+      iot5
+      iot6
+      iot7
+      iot8
+      submitYourPaper
+    }
+  }
+`;

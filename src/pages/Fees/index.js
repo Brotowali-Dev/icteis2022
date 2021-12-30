@@ -1,17 +1,24 @@
 import './Fees.css';
 
+// Graph QL
+import { useQuery } from '@apollo/client';
+import { LOAD_FEES } from '../../graphql/queries';
+import Loading from '../../components/Loading';
+
 const Fees = () => {
+  const { loading, error, data } = useQuery(LOAD_FEES);
+  if (loading) return <Loading />;
+  if (error) return <h1>Error</h1>;
+
+  const datas = data.feesPages[0];
+
   return (
     <div>
       <div className='fees-hero'>
         <div className='fees-heroContent'>
-          <h1>Fees and Payment Policies</h1>
+          <h1>{datas.title}</h1>
           <hr className='hr' />
-          <p>
-            To facilitate the submission process and the subsequent follow up
-            the process, please consider the following guidelines, information,
-            tips, terms, and deadlines mentioned.
-          </p>
+          <p>{datas.deskripsi}</p>
         </div>
       </div>
       <main className='fees-container'>
@@ -25,16 +32,13 @@ const Fees = () => {
               </div>
               <div className='cardTitle'>
                 <div className='type'>TYPE</div>
-                <div className='presenter'>Presenter</div>
+                <div className='presenter'>{datas.type1}</div>
               </div>
             </div>
-            <div className='cardBody'>
-              Long Description will be here to give a overview about presenter
-              type and also who should get.
-            </div>
+            <div className='cardBody'>{datas.deskripsiType1}</div>
             <div className='cardFooter'>
               <div className='price'>PRICE</div>
-              <span>$100</span> / paper
+              <span>{datas.biayaType1}</span> / paper
             </div>
           </div>
 
@@ -45,16 +49,13 @@ const Fees = () => {
               </div>
               <div className='cardTitle'>
                 <div className='type'>TYPE</div>
-                <div className='presenter'>Non-presenter</div>
+                <div className='presenter'>{datas.type2}</div>
               </div>
             </div>
-            <div className='cardBody'>
-              Long Description will be here to give a overview about presenter
-              type and also who should get.
-            </div>
+            <div className='cardBody'>{datas.deskripsiType2}</div>
             <div className='cardFooter'>
               <div className='price'>PRICE</div>
-              <span>$50</span> / paper
+              <span>{datas.biayaType2}</span> / paper
             </div>
           </div>
         </div>
@@ -64,42 +65,30 @@ const Fees = () => {
         {/* PAYMENT METHOD */}
         <div className='paymentProcess'>
           <div className='paymentTitle'>
-            <span>1</span> Make payments based on the type of transaction
+            <span>1</span> {datas.paymentInstruction1}
           </div>
           <div className='paymentSubTitle'>Pay via Bank Account (USD)</div>
           <div className='paymentDescription'>
-            For international presenter can pay the conference fees to: <br />
-            Account name: UGM ICST
-            <br />
-            Account number: 9888-9002-2411-1453
-            <br />
-            Bank name: BNI 46
-            <br />
-            Swift code: BNINIDJA
-            <br />
-            *) Please note that the bank &#8217; s account number is different
-            for the international and local presenter.
+            <p
+              dangerouslySetInnerHTML={{
+                __html: datas.deskripsiPaymentInstruction1.html,
+              }}
+            ></p>
           </div>
         </div>
         {/* 2 */}
         <div className='paymentProcess'>
           <div className='paymentTitle'>
-            <span>2</span> Payment confirmation
+            <span>2</span> {datas.paymentInstruction2}
           </div>
           <div className='paymentSubTitle'>Confirm your payment</div>
           <div className='paymentDescription'>
-            Before confirming your payment in the confirmation form, you need to
-            prepare these following items: <br />
-            <ul>
-              <li>
-                The scanned or screenshot of your payment proof in JPG / JPEG /
-                PDF format.
-              </li>
-              <li>Your paper ID(s). </li>
-              <li>The presenter name.</li>
-            </ul>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: datas.deskripsiPaymentInstruction2.html,
+              }}
+            ></p>
             <div className='confirmPayment'>
-              After that, you can confirm your payment here:
               <a href='/#' className='confirmBtn'>
                 Confirm my Payment
               </a>
@@ -109,18 +98,17 @@ const Fees = () => {
         {/* 3 */}
         <div className='paymentProcess'>
           <div className='paymentTitle'>
-            <span>3</span> Payment verification process
+            <span>3</span> {datas.paymentInstruction3}
           </div>
-          <div className='paymentSubTitle'>
+          {/* <div className='paymentSubTitle'>
             Wait for the next 2-3 Business Day
-          </div>
+          </div> */}
           <div className='paymentDescription'>
-            Please make sure not to miss the date. The deadline for the payment
-            confirmation is on August 24, but you will get an early-bird
-            discount if you pay before August 17. If you did not pay via credit
-            card in the EDAS, you do not need to click the register icon in the
-            EDAS. The committee will register it for you after reviewing your
-            payment.
+            <p
+              dangerouslySetInnerHTML={{
+                __html: datas.deskripsiPaymentInstruction3.html,
+              }}
+            ></p>
             <div className='contact'>
               Have any questions about the the instruction?{' '}
               <a href='/#'>Contact us</a>

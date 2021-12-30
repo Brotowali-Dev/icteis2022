@@ -196,23 +196,23 @@ export default function Navbar() {
           <div className='col bg-grey'>
             <h3>Download Docs</h3>
             <a className='links' href='/#'>
-              <img src='/assets/pdfdownload.svg' alt='icon' />
+              <img src='/assets/file-pdf.svg' alt='icon' />
               All Docs
             </a>
             <a className='links' href='/#'>
-              <img src='/assets/pdfdownload.svg' alt='icon' />
+              <img src='/assets/file-pdf.svg' alt='icon' />
               All Guideline
             </a>
             <a className='links' href='/#'>
-              <img src='/assets/pdfdownload.svg' alt='icon' />
+              <img src='/assets/file-pdf.svg' alt='icon' />
               Article Preparation
             </a>
             <a className='links' href='/#'>
-              <img src='/assets/pdfdownload.svg' alt='icon' />
+              <img src='/assets/file-pdf.svg' alt='icon' />
               Paper Template
             </a>
             <a className='links' href='/#'>
-              <img src='/assets/pdfdownload.svg' alt='icon' />
+              <img src='/assets/file-pdf.svg' alt='icon' />
               Copyright Checklist
             </a>
           </div>

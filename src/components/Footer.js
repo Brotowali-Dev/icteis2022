@@ -56,28 +56,28 @@ export default function Footer() {
             href={data.footers[0].allGuidelinePdf.url}
             className='links footer-name'
           >
-            <img src='/assets/pdfdownload.svg' alt='icon' />
+            <img src='/assets/file-pdf.svg' alt='icon' />
             All Guideline
           </a>
           <a
             href={data.footers[0].articlePreparationPdf.url}
             className='links footer-name'
           >
-            <img src='/assets/pdfdownload.svg' alt='icon' />
+            <img src='/assets/file-pdf.svg' alt='icon' />
             Article Preparation
           </a>
           <a
             href={data.footers[0].paperTemplatePdf.url}
             className='links footer-name'
           >
-            <img src='/assets/pdfdownload.svg' alt='icon' />
+            <img src='/assets/file-pdf.svg' alt='icon' />
             Paper Template
           </a>
           <a
             href={data.footers[0].copyrightChecklistPdf.url}
             className='links footer-name'
           >
-            <img src='/assets/pdfdownload.svg' alt='icon' />
+            <img src='/assets/file-pdf.svg' alt='icon' />
             Copyright Checklist
           </a>
         </div>
