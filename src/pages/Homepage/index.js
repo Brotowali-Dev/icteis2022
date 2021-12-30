@@ -1,40 +1,22 @@
 import './Homepage.css';
 
+// Components
+import Hero from '../../components/Hero';
+import Partnership from '../../components/Partnership';
+
+// Graph QL
+import { useQuery } from '@apollo/client';
+import { LOAD_INFO_OVERVIEW } from '../../graphql/queries';
+
 const Homepage = () => {
+  const { loading, error, data } = useQuery(LOAD_INFO_OVERVIEW);
+  if (error) return <h1>Error</h1>;
+  if (loading) return <h1>Loading</h1>;
+  const datas = data.landingPages[0];
   return (
     <div>
       {/* HERO */}
-      <section className='hero'>
-        <div className='hero-text'>
-          <span>the 1st</span>
-          <h1>International Conference of Technology and Information System</h1>
-          <div>
-            <a href='/#' className='btn-primary'>
-              <div className='btn-content'>
-                submit paper
-                <div className='btn-content-child'>
-                  <img src='/assets/line.svg' alt='line' />
-                  <img src='/assets/plus.svg' alt='plus' />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href='/#' className='btn-secondary'>
-              <div className='btn-content'>
-                call for paper
-                <div className='btn-content-child'>
-                  <img src='/assets/line.svg' alt='line' />
-                  <img src='/assets/arrowSerong.svg' alt='plus' />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className='image-container'>
-          <img src='/assets/hero.svg' alt='heroSatu' />
-        </div>
-      </section>
+      <Hero />
       {/* END HERO */}
 
       {/* INFO SECTION */}
@@ -42,7 +24,7 @@ const Homepage = () => {
         <div className='schedule'>
           <div>
             <div className='infoTitle'>schedule</div>
-            <div className='infoTime'>23 Mar - 18 Aug 2022</div>
+            <div className='infoTime'>{datas.schedule}</div>
           </div>
           <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
         </div>
@@ -50,7 +32,7 @@ const Homepage = () => {
         <div className='location'>
           <div>
             <div className='infoTitle'>Location</div>
-            <div className='infoTime'>23 Mar - 18 Aug 2022</div>
+            <div className='infoTime'>{datas.location}</div>
           </div>
           <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
         </div>
@@ -58,7 +40,7 @@ const Homepage = () => {
         <div className='organizer'>
           <div>
             <div className='infoTitle'>Organizer</div>
-            <div className='infoTime'>23 Mar - 18 Aug 2022</div>
+            <div className='infoTime'>{datas.organizer}</div>
           </div>
           <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
         </div>
@@ -74,24 +56,11 @@ const Homepage = () => {
           <div>
             <h1 className='overview-title'>Overview</h1>
             <div className='overviewTitle'>About ICTEIS 2022</div>
-            <div className='overviewBody'>
-              Held as part of the Universitas Gadjah Mada Annual Scientific
-              Conferences (UASC 2021) series, the 7th International Conference
-              on Science and Technology (ICST 2021) provides an ideal academic
-              platform for researchers to present the latest research findings
-              and describe emerging technologies and directions in engineering
-              and the natural sciences.
-            </div>
+            <div className='overviewBody'>{datas.about}</div>
           </div>
           <div className='notes'>
             <div className='overviewTitle'>Notes from Organizer</div>
-            <div className='overviewBody'>
-              Following the advice and guidelines from healthcare officials and
-              local authorities, ICST 2021 will now be held virtually on 7–8
-              September 2021. The conference fees will be adjusted. Information
-              and instructions on how to prepare for a virtual presentation will
-              be sent separately.
-            </div>
+            <div className='overviewBody'>{datas.notes}</div>
             <div className='quickActions'>
               <div className='overviewTitle'>Quick Actions</div>
               <nav>
@@ -124,7 +93,7 @@ const Homepage = () => {
           <div className='overviewImage1'>
             <img
               className='overviewImage1'
-              src='assets/hero.svg'
+              src={datas.overviewImage1.url}
               alt='gambarSatu'
             />
           </div>
@@ -132,7 +101,7 @@ const Homepage = () => {
             {' '}
             <img
               className='overviewImage1'
-              src='assets/hero.svg'
+              src={datas.overviewImage2.url}
               alt='gambarDua'
             />
           </div>
@@ -143,17 +112,14 @@ const Homepage = () => {
       {/* IMPORTANT DATES SECTION */}
       <section className='dates'>
         <h1>Important Dates</h1>
-        <p>
-          Held as part of the Universitas Gadjah Mada Annual Scientific
-          Conferences (UASC 2021) series
-        </p>
+        <p>{datas.datesDescription}</p>
         <div className='dateFlow'>
           <div className='dateWidth'>
             <div className='dateIconDisable'>
               <img src='/assets/submission.svg' alt='submissionIcon' />
             </div>
             <div className='dateTitleDisable'>Submission Deadline</div>
-            <div className='dateDatesDisable'>08th Nov, 2021</div>
+            <div className='dateDatesDisable'>{datas.submissionDeadline}</div>
           </div>
 
           <div className='desktop'>
@@ -168,7 +134,7 @@ const Homepage = () => {
               <img src='/assets/notification.svg' alt='notificationIcon' />
             </div>
             <div className='dateTitle'>Notification of Acceptance</div>
-            <div className='dateDates'>08th Nov, 2021</div>
+            <div className='dateDates'>{datas.notificationOfAcceptance}</div>
           </div>
 
           <div className='desktop'>
@@ -183,7 +149,7 @@ const Homepage = () => {
               <img src='/assets/registration.svg' alt='registrationIcon' />
             </div>
             <div className='dateTitle'>Registration Deadline</div>
-            <div className='dateDates'>08th Nov, 2021</div>
+            <div className='dateDates'>{datas.registrationDeadline}</div>
           </div>
 
           <div className='desktop'>
@@ -198,7 +164,7 @@ const Homepage = () => {
               <img src='/assets/conference.svg' alt='conferenceIcon' />
             </div>
             <div className='dateTitle'>Conference Date</div>
-            <div className='dateDates'>08th Nov, 2021</div>
+            <div className='dateDates'>{datas.conferenceDate}</div>
           </div>
         </div>
       </section>
@@ -446,52 +412,7 @@ const Homepage = () => {
       {/* END REVIEWERS SECTION */}
 
       {/* PARTNERSHIP SECTION */}
-      <section className='partnership'>
-        <h1>Partnership</h1>
-        <p>src=/assets/logo-itPLN.svg</p>
-        <div className='row gap-100 partnership-wrap'>
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-          <div className='partnerImage'>
-            <img src='/assets/logo-itPLN.svg' alt='partnership' />
-          </div>
-        </div>
-      </section>
+      <Partnership />
       {/* END PARTNERSHIP SECTION */}
     </div>
   );
