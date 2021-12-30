@@ -5,7 +5,12 @@ import { LOAD_HERO } from '../graphql/queries';
 function Hero() {
   const { loading, data, error } = useQuery(LOAD_HERO);
   if (error) return <h1>Error</h1>;
-  if (loading) return <h1>Loading</h1>;
+  if (loading)
+    return (
+      <div
+        style={{ height: '100vh', width: '100vw', background: '#061237' }}
+      ></div>
+    );
 
   return (
     <section className='hero'>

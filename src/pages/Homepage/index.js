@@ -23,6 +23,8 @@ const Homepage = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          background: '#061237',
+          color: '#FFFFFF',
         }}
       >
         Loading...
