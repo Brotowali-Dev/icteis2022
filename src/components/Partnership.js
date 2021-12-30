@@ -6,7 +6,6 @@ const Partnership = () => {
   const { loading, error, data } = useQuery(LOAD_PARTNERSHIP);
   if (error) return <h1>Error Fetching Images</h1>;
   if (loading) return <h1>loading...</h1>;
-  console.log(data);
   return (
     <section className='partnership'>
       <h1>Partnership</h1>

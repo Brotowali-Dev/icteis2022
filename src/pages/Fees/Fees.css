@@ -253,7 +253,110 @@
   margin-left: 30px;
 }
 
+/* =============================== */
+/*          TABLET VERSION         */
+/* =============================== */
+@media only screen and (min-width: 601px) and (max-width: 1049px) {
+  .fees-container {
+    padding: 0 32px;
+  }
+
+  .fees-hero {
+    padding: 90px 32px;
+  }
+  .cardHeader {
+    gap: 14px;
+  }
+  .fees-flex {
+    gap: 20px;
+  }
+  .cardIcon {
+    background: #1455fe;
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardIcon img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 80px;
+  }
+
+  .type {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .presenter {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .cardBody {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 24px 0;
+  }
+
+  .cardFooter span {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .price {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .termNavigation nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 60px;
+    overflow: scroll;
+  }
+
+  .paymentTitle span {
+    width: 40px;
+    height: 40px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 5px 15px;
+  }
+
+  .paymentTitle {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .paymentSubTitle {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .paymentDescription {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .termNavigation nav ul li a {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+/* ==================================== */
 /* MOBILE VERSION */
+/* ===================================== */
 @media (max-width: 600px) {
   .fees-container {
     padding: 0 24px;

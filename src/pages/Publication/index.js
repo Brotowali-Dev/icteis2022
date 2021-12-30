@@ -3,25 +3,11 @@ import './Publication.css';
 
 import { useQuery } from '@apollo/client';
 import { LOAD_JOURNAL } from '../../graphql/queries';
+import Loading from '../../components/Loading';
 
 const Publication = () => {
   const { loading, data, error } = useQuery(LOAD_JOURNAL);
-  if (loading)
-    return (
-      <h1
-        style={{
-          height: '100vh',
-          width: '100vw',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          background: '#061237',
-          color: '#FFFFFF',
-        }}
-      >
-        Loading...
-      </h1>
-    );
+  if (loading) return <Loading />;
   if (error) return <h1>Error</h1>;
 
   console.log(data);
