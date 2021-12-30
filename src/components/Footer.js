@@ -1,7 +1,14 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 
+// GRAPH QL
+import { useQuery } from '@apollo/client';
+import { LOAD_FOOTER } from '../graphql/queries';
+
 export default function Footer() {
+  const { loading, error, data } = useQuery(LOAD_FOOTER);
+  if (error) return <h1>Fetching Data Error</h1>;
+  if (loading) return <h1>loading...</h1>;
   return (
     <footer>
       <div className='footer-header'>
@@ -14,7 +21,7 @@ export default function Footer() {
           </div>
         </div>
         <div className='footer-date'>
-          23 Mar - 18 Aug 2022 | Jakarta, Indonesia (ID)
+          {data.footers[0].tanggal} | Jakarta, Indonesia (ID)
         </div>
       </div>
       <hr />
@@ -45,40 +52,55 @@ export default function Footer() {
         </div>
         <div className='col'>
           <div className='footerTitle'>Download</div>
-          <a href='/#' className='links footer-name'>
+          <a
+            href={data.footers[0].allGuidelinePdf.url}
+            className='links footer-name'
+          >
             <img src='/assets/pdfdownload.svg' alt='icon' />
             All Guideline
           </a>
-          <a href='/#' className='links footer-name'>
+          <a
+            href={data.footers[0].articlePreparationPdf.url}
+            className='links footer-name'
+          >
             <img src='/assets/pdfdownload.svg' alt='icon' />
             Article Preparation
           </a>
-          <a href='/#' className='links footer-name'>
+          <a
+            href={data.footers[0].paperTemplatePdf.url}
+            className='links footer-name'
+          >
             <img src='/assets/pdfdownload.svg' alt='icon' />
             Paper Template
           </a>
-          <a href='/#' className='links footer-name'>
+          <a
+            href={data.footers[0].copyrightChecklistPdf.url}
+            className='links footer-name'
+          >
             <img src='/assets/pdfdownload.svg' alt='icon' />
             Copyright Checklist
           </a>
         </div>
         <div className='col'>
           <div className='footerTitle'>Contact</div>
-          <a href='/#' className='links footer-name'>
+          <a
+            href={`mailto:${data.footers[0].email}`}
+            className='links footer-name'
+          >
             <img src='/assets/mail.svg' alt='icon' />
-            icteis@itpln.ac.id
+            {data.footers[0].email}
           </a>
           <a href='/#' className='links footer-name'>
             <img src='/assets/chat.svg' alt='icon' />
-            +62 810 1010 1010
+            {data.footers[0].telepon}
           </a>
           <a href='/#' className='links footer-name'>
             <img src='/assets/web.svg' alt='icon' />
-            @icteis_itpln
+            {data.footers[0].instagram}
           </a>
-          <a href='/#' className='links footer-name'>
+          <a href={data.footers[0].website} className='links footer-name'>
             <img src='/assets/web.svg' alt='icon' />
-            @itpln
+            {data.footers[0].website}
           </a>
         </div>
       </div>
