@@ -19,7 +19,7 @@ const Homepage = () => {
   if (loading) return <Loading />;
   const datas = data.landingPages[0];
   return (
-    <div>
+    <div className='outer-container'>
       {/* HERO */}
       <Hero />
       {/* END HERO */}

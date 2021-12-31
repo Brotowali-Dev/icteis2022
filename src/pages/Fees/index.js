@@ -73,9 +73,9 @@ const Fees = () => {
 
           <div className='paymentDescription'>
             <TransferTab
-              creditCard={datas.deskripsiPaymentInstruction1.html}
-              usd={datas.deskripsiPaymentInstruction1.html}
-              idr={datas.deskripsiPaymentInstruction1.html}
+              creditCard={datas.creditCard.html}
+              usd={datas.bankUsd.html}
+              idr={datas.bankRupiah.html}
             />
           </div>
         </div>
@@ -124,7 +124,12 @@ const Fees = () => {
         <h1 className='title'>Terms & Conditions</h1>
         <div className='fees-terms'>
           {/* TABS  */}
-          <Tabs />
+          <Tabs
+            registration={datas.registration.html}
+            payment={datas.payment.html}
+            participant={datas.participant.html}
+            earlyBid={datas.earlyBid.html}
+          />
           <div className='contact'>
             Have any questions about the the instruction?{' '}
             <a href='/#'>Contact us</a>
