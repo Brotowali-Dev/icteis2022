@@ -26,7 +26,7 @@ const Homepage = () => {
       {/* JUMPER */}
       <Jumper />
       {/* INFO SECTION */}
-      <section className='info'>
+      <section className='info' id='about'>
         <div className='schedule'>
           <div>
             <div className='infoTitle'>schedule</div>
@@ -57,7 +57,7 @@ const Homepage = () => {
       {/* END INFO SECTION */}
 
       {/* OVERVIEW SECTION */}
-      <section className='overview' id='about'>
+      <section className='overview'>
         <div className='about'>
           <div>
             <h1 className='overview-title'>Overview</h1>
@@ -72,7 +72,7 @@ const Homepage = () => {
               <nav>
                 <ul>
                   <li>
-                    <a href='/#'>
+                    <a href='/call-for-paper'>
                       <img src='/assets/callforpaper.svg' alt='icon' /> Call For
                       Paper
                     </a>
