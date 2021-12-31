@@ -12,7 +12,7 @@ export default function CallForPaper() {
   const datas = data.callForPaperSections[0];
 
   return (
-    <section className='callForPaper'>
+    <section className='callForPaper' id='callforpaper'>
       <h1>Call for Paper</h1>
 
       <p>{datas.deskripsi}</p>

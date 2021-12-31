@@ -13,7 +13,7 @@ export default function Reviewers() {
   const datas = data.reviewers[0];
 
   return (
-    <section className='review'>
+    <section className='review' id='reviewers'>
       <h1>Reviewers</h1>
       <p>{datas.deskripsi}</p>
       <div className='flex wrap gap-20'>
@@ -87,7 +87,7 @@ export default function Reviewers() {
           </div>
         </div>
       </div>
-      <h1>Comitees</h1>
+      <h1 id='comitees'>Comitees</h1>
       <p>chairman1</p>
       <div className='row justify-between'>
         <div>

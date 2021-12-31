@@ -11,6 +11,7 @@ import Speakers from '../../components/Speakers';
 import Reviewers from '../../components/Reviewers';
 import CallForPaper from '../../components/CallForPaper';
 import Loading from '../../components/Loading';
+import Jumper from '../../components/Jumper';
 
 const Homepage = () => {
   const { loading, error, data } = useQuery(LOAD_INFO_OVERVIEW);
@@ -22,7 +23,8 @@ const Homepage = () => {
       {/* HERO */}
       <Hero />
       {/* END HERO */}
-
+      {/* JUMPER */}
+      <Jumper />
       {/* INFO SECTION */}
       <section className='info'>
         <div className='schedule'>
@@ -55,7 +57,7 @@ const Homepage = () => {
       {/* END INFO SECTION */}
 
       {/* OVERVIEW SECTION */}
-      <section className='overview'>
+      <section className='overview' id='about'>
         <div className='about'>
           <div>
             <h1 className='overview-title'>Overview</h1>
