@@ -85,7 +85,7 @@ const Publication = () => {
                   tanggal={cat.tanggalPublished}
                   volume={cat.volumeJurnal}
                   deskripsi={cat.deskripsi}
-                  links={cat.linkJurnal}
+                  links={cat.linkJurnal.url}
                   key={cat.id}
                 />
               );

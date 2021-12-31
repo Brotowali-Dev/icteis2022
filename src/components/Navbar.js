@@ -34,9 +34,6 @@ export default function Navbar() {
         <nav className='desktop'>
           <ul>
             <li>
-              <a href='/#'>Conference</a>
-            </li>
-            <li>
               <div
                 onClick={isClicked ? onDropdownClose : onDropdownClick}
                 className='flex gap-10 dropdown'
@@ -87,9 +84,6 @@ export default function Navbar() {
         }
       >
         <div className='col'>
-          <Link className='p-24' to='/'>
-            Conference
-          </Link>
           <div
             onClick={
               isMobileDropdownClicked
@@ -109,10 +103,10 @@ export default function Navbar() {
           >
             <div className='col'>
               <h3>Call For Paper</h3>
-              <Link to='/call-for-paper'>Computer Engineering</Link>
-              <Link to='/call-for-paper'>Electrical Engineering</Link>
-              <Link to='/call-for-paper'>Civil Engineering</Link>
-              <Link to='/call-for-paper'>Machine Engineering</Link>
+              <div>Computer Engineering</div>
+              <div>Electrical Engineering</div>
+              <div>Civil Engineering</div>
+              <div>Machine Engineering</div>
               <Link to='/call-for-paper' className='see links'>
                 See all <img src='/assets/arrowRight.svg' alt='redArrow' />
               </Link>
@@ -179,10 +173,10 @@ export default function Navbar() {
         <div className='row'>
           <div className='col'>
             <h3>Call For Paper</h3>
-            <Link to='/call-for-paper'>Computer Engineering</Link>
-            <Link to='/call-for-paper'>Electrical Engineering</Link>
-            <Link to='/call-for-paper'>Civil Engineering</Link>
-            <Link to='/call-for-paper'>Machine Engineering</Link>
+            <div>Computer Engineering</div>
+            <div>Electrical Engineering</div>
+            <div>Civil Engineering</div>
+            <div>Machine Engineering</div>
             <Link to='/call-for-paper' className='see links'>
               See all <img src='/assets/arrowRight.svg' alt='redArrow' />
             </Link>
