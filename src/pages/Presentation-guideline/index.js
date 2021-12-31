@@ -104,20 +104,32 @@ const PresentationGuideline = () => {
             <Link to='/full-paper-guideline' className='guideline-links'>
               <img src='/assets/Frame.svg' alt='copylink' /> Full Paper
             </Link>
-            <Link to='/presentation-guideline' className='guideline-links'>
-              <img src='/assets/fresentation.svg' alt='copylink' /> Presentation
+            <Link to='/abstract-guideline' className='guideline-links mt-12'>
+              <img src='/assets/abstract.svg' alt='copylink' /> Abstract
             </Link>
             <div className='linksTitle'>Download Docs</div>
-            <a href={datas.downloadAllGuideline} className='guideline-links'>
+            <a
+              href={datas.downloadAllGuideline.url}
+              className='guideline-links'
+            >
               All Guideline
             </a>
-            <a href='/#' className='guideline-links'>
+            <a
+              href={datas.downloadArticle.url}
+              className='guideline-links mt-12'
+            >
               Article Preparation
             </a>
-            <a href='/#' className='guideline-links'>
+            <a
+              href={datas.downloadPaperTemplate.url}
+              className='guideline-links mt-12'
+            >
               Paper Template
             </a>
-            <a href='/#' className='guideline-links'>
+            <a
+              href={datas.downloadCopyright.url}
+              className='guideline-links mt-12'
+            >
               Copyright Checklist
             </a>
           </div>

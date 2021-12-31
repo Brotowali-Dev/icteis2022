@@ -2,9 +2,21 @@ import './Callforpaper.css';
 import Loading from '../../components/Loading';
 import { useQuery } from '@apollo/client';
 import { LOAD_CALL_FOR_PAPER } from '../../graphql/queries';
+import { useState } from 'react';
 
 const CallForPaper = () => {
   const { loading, error, data } = useQuery(LOAD_CALL_FOR_PAPER);
+
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index, event) => {
+    setToggleState(index);
+    event.preventDefault();
+  };
+
+  const getActiveClass = (index, className) =>
+    toggleState === index ? className : '';
+
   if (loading) return <Loading />;
   if (error) return <h1>Error</h1>;
 
@@ -34,7 +46,7 @@ const CallForPaper = () => {
             </section>
             {/* END MAIN */}
             {/* PUBLICATION */}
-            <section className='publications'>
+            <section className='publications' id='frontend'>
               <h2>{datas.judul1}</h2>
               <p>{datas.deskripsi1}</p>
               {/* adding wrap */}
@@ -71,7 +83,7 @@ const CallForPaper = () => {
               </div>
             </section>
 
-            <section className='publications'>
+            <section className='publications' id='security'>
               <h2>{datas.judul2}</h2>
               <p>{datas.deskripsi2}</p>
               <div className='flex  gap-100'>
@@ -107,7 +119,7 @@ const CallForPaper = () => {
               </div>
             </section>
 
-            <section className='publications'>
+            <section className='publications' id='ai'>
               <h2>{datas.judul3}</h2>
               <p>{datas.deskripsi3}</p>
               <div className='flex gap-100 '>
@@ -143,7 +155,7 @@ const CallForPaper = () => {
               </div>
             </section>
 
-            <section className='publications'>
+            <section className='publications' id='iot'>
               <h2>{datas.judul4}</h2>
               <p>{datas.deskripsi4}</p>
               {/* adding wrap */}
@@ -189,22 +201,41 @@ const CallForPaper = () => {
               <p className='sidebar-title'>fields</p>
               <nav>
                 <ul>
-                  <li className='active'>
-                    <a className='active' href='/#'>
-                      Engineering
+                  <li className={` ${getActiveClass(1, 'active')}`}>
+                    <a
+                      className={` ${getActiveClass(1, 'active')}`}
+                      onClick={() => toggleTab(1)}
+                      href='#frontend'
+                    >
+                      Front End Development
                     </a>
                   </li>
-                  <li>
-                    <a href='/#'>Computer Engineering</a>
+                  <li className={` ${getActiveClass(2, 'active')}`}>
+                    <a
+                      className={` ${getActiveClass(2, 'active')}`}
+                      onClick={() => toggleTab(2)}
+                      href='#security'
+                    >
+                      Website Security
+                    </a>
                   </li>
-                  <li>
-                    <a href='/#'>Electrical Engineering</a>
+                  <li className={` ${getActiveClass(3, 'active')}`}>
+                    <a
+                      className={` ${getActiveClass(3, 'active')}`}
+                      onClick={() => toggleTab(3)}
+                      href='#ai'
+                    >
+                      Artificial Intelligence
+                    </a>
                   </li>
-                  <li>
-                    <a href='/#'>Civil Engineering</a>
-                  </li>
-                  <li>
-                    <a href='/#'>Mechanic Engineering</a>
+                  <li className={` ${getActiveClass(4, 'active')}`}>
+                    <a
+                      className={` ${getActiveClass(4, 'active')}`}
+                      onClick={() => toggleTab(4)}
+                      href='#iot'
+                    >
+                      Internet Of Things
+                    </a>
                   </li>
                 </ul>
               </nav>

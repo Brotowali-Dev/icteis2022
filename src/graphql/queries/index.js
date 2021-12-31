@@ -247,15 +247,37 @@ export const LOAD_FEES = gql`
       deskripsiType2
       biayaType2
       paymentInstruction1
+      creditCard {
+        html
+      }
+      bankUsd {
+        html
+      }
+      bankRupiah {
+        html
+      }
       deskripsiPaymentInstruction1 {
         html
+        raw
       }
       paymentInstruction2
       deskripsiPaymentInstruction2 {
-        html
+        markdown
       }
       paymentInstruction3
       deskripsiPaymentInstruction3 {
+        html
+      }
+      registration {
+        html
+      }
+      payment {
+        html
+      }
+      participant {
+        html
+      }
+      earlyBid {
         html
       }
     }
@@ -288,6 +310,15 @@ export const LOAD_ABSTRACT = gql`
       downloadAllGuideline {
         url
       }
+      downloadArticle {
+        url
+      }
+      downloadPaperTemplate {
+        url
+      }
+      downloadCopyright {
+        url
+      }
     }
   }
 `;
@@ -318,6 +349,15 @@ export const LOAD_PRESENTATION = gql`
       downloadAllGuideline {
         url
       }
+      downloadArticle {
+        url
+      }
+      downloadPaperTemplate {
+        url
+      }
+      downloadCopyright {
+        url
+      }
     }
   }
 `;
@@ -346,6 +386,15 @@ export const LOAD_FULL_PAPER = gql`
         url
       }
       downloadAllGuideline {
+        url
+      }
+      downloadArticle {
+        url
+      }
+      downloadPaperTemplate {
+        url
+      }
+      downloadCopyright {
         url
       }
     }

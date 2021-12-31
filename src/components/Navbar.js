@@ -62,7 +62,7 @@ export default function Navbar() {
         </a>
 
         {/* MOBILE HEADER */}
-        <div className=' gap-10 mobile'>
+        <div className='gap-10 mobile'>
           {/* <div className='download'>
             <img src='/assets/pdfDownload.svg' alt='download' />
           </div> */}

@@ -88,7 +88,6 @@ export default function Reviewers() {
         </div>
       </div>
       <h1 id='comitees'>Comitees</h1>
-      <p>chairman1</p>
       <div className='row justify-between'>
         <div>
           <div className='advisory'>Advisory Board</div>
