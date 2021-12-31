@@ -1,17 +1,18 @@
 import './Homepage.css';
 
-// Components
-import Hero from '../../components/Hero';
-import Partnership from '../../components/Partnership';
-
 // Graph QL
 import { useQuery } from '@apollo/client';
 import { LOAD_INFO_OVERVIEW } from '../../graphql/queries';
+
+// Components
+import Hero from '../../components/Hero';
+import Partnership from '../../components/Partnership';
 import Speakers from '../../components/Speakers';
 import Reviewers from '../../components/Reviewers';
 import CallForPaper from '../../components/CallForPaper';
 import Loading from '../../components/Loading';
 import Jumper from '../../components/Jumper';
+import BackToTop from 'react-back-to-top-button';
 
 const Homepage = () => {
   const { loading, error, data } = useQuery(LOAD_INFO_OVERVIEW);
@@ -191,6 +192,21 @@ const Homepage = () => {
       {/* PARTNERSHIP SECTION */}
       <Partnership />
       {/* END PARTNERSHIP SECTION */}
+
+      <BackToTop
+        showAt={100}
+        speed={1500}
+        easing='easeInOutSine'
+        style={{
+          zIndex: 4,
+          margin: '16px',
+          background: '#1455fe',
+          padding: '5px 20px',
+          borderRadius: '4px',
+        }}
+      >
+        <img src='/assets/totop.svg' alt='totop' />
+      </BackToTop>
     </div>
   );
 };
