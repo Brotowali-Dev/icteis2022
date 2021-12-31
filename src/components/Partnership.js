@@ -7,7 +7,7 @@ const Partnership = () => {
   if (error) return <h1>Error Fetching Images</h1>;
   if (loading) return <h1>loading...</h1>;
   return (
-    <section className='partnership'>
+    <section className='partnership' id='partnership'>
       <h1>Partnership</h1>
       <p>{data.partnerships[0].deskripsi}</p>
       <div className='row gap-100 partnership-wrap'>

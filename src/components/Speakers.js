@@ -11,7 +11,7 @@ export default function Speakers() {
   const datas = data.speakers[0];
 
   return (
-    <section className='speaker'>
+    <section className='speaker' id='speakers'>
       <h1>Keynote Speakers</h1>
       <p>{datas.deskripsi}</p>
       <div className='flex wrap gap-20'>
