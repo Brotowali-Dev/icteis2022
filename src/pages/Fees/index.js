@@ -4,6 +4,8 @@ import './Fees.css';
 import { useQuery } from '@apollo/client';
 import { LOAD_FEES } from '../../graphql/queries';
 import Loading from '../../components/Loading';
+import Tabs from '../../components/Tabs';
+import TransferTab from '../../components/TransferTab';
 
 const Fees = () => {
   const { loading, error, data } = useQuery(LOAD_FEES);
@@ -68,12 +70,13 @@ const Fees = () => {
             <span>1</span> {datas.paymentInstruction1}
           </div>
           <div className='paymentSubTitle'>Pay via Bank Account (USD)</div>
+
           <div className='paymentDescription'>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: datas.deskripsiPaymentInstruction1.html,
-              }}
-            ></p>
+            <TransferTab
+              creditCard={datas.deskripsiPaymentInstruction1.html}
+              usd={datas.deskripsiPaymentInstruction1.html}
+              idr={datas.deskripsiPaymentInstruction1.html}
+            />
           </div>
         </div>
         {/* 2 */}
@@ -120,119 +123,11 @@ const Fees = () => {
         {/* TERMS AND CONDITIONS */}
         <h1 className='title'>Terms & Conditions</h1>
         <div className='fees-terms'>
-          <div className='termNavigation'>
-            <nav>
-              <ul>
-                <li>
-                  <a className='active' href='/#'>
-                    Registration
-                  </a>
-                </li>
-                <li>
-                  <a href='/#'>payment</a>
-                </li>
-                <li>
-                  <a href='/#'>participant</a>
-                </li>
-                <li>
-                  <a href='/#'>earlybid</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className='termsDescription'>
-            <div id='registration'>
-              <ul>
-                <li>
-                  The registration fee covers seminar materials, attendance of
-                  all technical sessions, and publication.
-                </li>
-                <li>
-                  The registration fee covers one participant only. Multiple
-                  authors who are attending must register separately, and those
-                  who are not presenting should register as a non-presenter.
-                </li>
-                <li>
-                  A non-presenter participant can attend two selected sessions
-                  only and won &#8217; t get any seminar materials. Each session
-                  has limited participants.
-                </li>
-                <li>
-                  A receipt will be generated from the payment confirmation
-                  details after the your payment is verified.
-                </li>
-              </ul>
-            </div>
-            <div id='payment'>
-              <ul>
-                <li>
-                  The registration fee covers seminar materials, attendance of
-                  all technical sessions, and publication.
-                </li>
-                <li>
-                  The registration fee covers one participant only. Multiple
-                  authors who are attending must register separately, and those
-                  who are not presenting should register as a non-presenter.
-                </li>
-                <li>
-                  A non-presenter participant can attend two selected sessions
-                  only and won &#8217; t get any seminar materials. Each session
-                  has limited participants.
-                </li>
-                <li>
-                  A receipt will be generated from the payment confirmation
-                  details after the your payment is verified.
-                </li>
-              </ul>
-            </div>
-            <div id='participant'>
-              <ul>
-                <li>
-                  The registration fee covers seminar materials, attendance of
-                  all technical sessions, and publication.
-                </li>
-                <li>
-                  The registration fee covers one participant only. Multiple
-                  authors who are attending must register separately, and those
-                  who are not presenting should register as a non-presenter.
-                </li>
-                <li>
-                  A non-presenter participant can attend two selected sessions
-                  only and won &#8217; t get any seminar materials. Each session
-                  has limited participants.
-                </li>
-                <li>
-                  A receipt will be generated from the payment confirmation
-                  details after the your payment is verified.
-                </li>
-              </ul>
-            </div>
-            <div id='earlybid'>
-              <ul>
-                <li>
-                  The registration fee covers seminar materials, attendance of
-                  all technical sessions, and publication.
-                </li>
-                <li>
-                  The registration fee covers one participant only. Multiple
-                  authors who are attending must register separately, and those
-                  who are not presenting should register as a non-presenter.
-                </li>
-                <li>
-                  A non-presenter participant can attend two selected sessions
-                  only and won &#8217; t get any seminar materials. Each session
-                  has limited participants.
-                </li>
-                <li>
-                  A receipt will be generated from the payment confirmation
-                  details after the your payment is verified.
-                </li>
-              </ul>
-              <div className='contact'>
-                Have any questions about the the instruction?{' '}
-                <a href='/#'>Contact us</a>
-              </div>
-            </div>
+          {/* TABS  */}
+          <Tabs />
+          <div className='contact'>
+            Have any questions about the the instruction?{' '}
+            <a href='/#'>Contact us</a>
           </div>
         </div>
         {/* END TERMS AND CONDITIONS */}
