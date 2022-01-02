@@ -103,10 +103,10 @@ export default function Navbar() {
           >
             <div className='col'>
               <h3>Call For Paper</h3>
-              <div>Computer Engineering</div>
-              <div>Electrical Engineering</div>
-              <div>Civil Engineering</div>
-              <div>Machine Engineering</div>
+              <div className='disabled-link'>Computer Engineering</div>
+              <div className='disabled-link'>Electrical Engineering</div>
+              <div className='disabled-link'>Civil Engineering</div>
+              <div className='disabled-link'>Machine Engineering</div>
               <Link to='/call-for-paper' className='see links'>
                 See all <img src='/assets/arrowRight.svg' alt='redArrow' />
               </Link>
@@ -173,10 +173,10 @@ export default function Navbar() {
         <div className='row'>
           <div className='col'>
             <h3>Call For Paper</h3>
-            <div>Computer Engineering</div>
-            <div>Electrical Engineering</div>
-            <div>Civil Engineering</div>
-            <div>Machine Engineering</div>
+            <div className='disabled-link'>Computer Engineering</div>
+            <div className='disabled-link'>Electrical Engineering</div>
+            <div className='disabled-link'>Civil Engineering</div>
+            <div className='disabled-link'>Machine Engineering</div>
             <Link to='/call-for-paper' className='see links'>
               See all <img src='/assets/arrowRight.svg' alt='redArrow' />
             </Link>

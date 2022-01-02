@@ -1,56 +1,84 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-scroll';
 
 const Jumper = () => {
-  const [toggleState, setToggleState] = useState(1);
+  // const [toggleState, setToggleState] = useState(1);
 
-  const toggleTab = (index, event) => {
-    setToggleState(index);
-    event.preventDefault();
-  };
+  // const toggleTab = (index, event) => {
+  //   setToggleState(index);
+  //   event.preventDefault();
+  // };
 
-  const getActiveClass = (index, className) =>
-    toggleState === index ? className : '';
+  // const getActiveClass = (index, className) =>
+  //   toggleState === index ? className : '';
 
   return (
     <div className='sticky'>
       <div className='jumper-container'>
         <ul className='jumper-tab-list'>
-          <li
-            className={`jumper ${getActiveClass(1, 'active-jumper')}`}
-            onClick={() => toggleTab(1)}
+          <Link
+            activeClass='active-jumper'
+            className='jumper'
+            to='about'
+            spy={true}
+            offset={-70}
+            smooth={true}
+            duration={500}
           >
-            <a href='#about'>About</a>
-          </li>
-          <li
-            className={`jumper ${getActiveClass(2, 'active-jumper')}`}
-            onClick={() => toggleTab(2)}
+            About
+          </Link>
+
+          <Link
+            activeClass='active-jumper'
+            className='jumper'
+            to='callForPaper'
+            spy={true}
+            smooth={true}
+            duration={500}
           >
-            <a href='#callforpaper'>Call For Paper</a>
-          </li>
-          <li
-            className={`jumper ${getActiveClass(3, 'active-jumper')}`}
-            onClick={() => toggleTab(3)}
+            Call For Paper
+          </Link>
+          <Link
+            activeClass='active-jumper'
+            className='jumper'
+            to='speakers'
+            spy={true}
+            smooth={true}
+            duration={500}
           >
-            <a href='#speakers'>Speakers</a>
-          </li>
-          <li
-            className={`jumper ${getActiveClass(4, 'active-jumper')}`}
-            onClick={() => toggleTab(4)}
+            Speakers
+          </Link>
+          <Link
+            activeClass='active-jumper'
+            className='jumper'
+            to='reviewers'
+            spy={true}
+            smooth={true}
+            duration={500}
           >
-            <a href='#reviewers'>Reviewers</a>
-          </li>
-          <li
-            className={`jumper ${getActiveClass(5, 'active-jumper')}`}
-            onClick={() => toggleTab(5)}
+            Reviewers
+          </Link>
+          <Link
+            activeClass='active-jumper'
+            className='jumper'
+            to='comitees'
+            spy={true}
+            offset={-90}
+            smooth={true}
+            duration={500}
           >
-            <a href='#comitees'>Comitees</a>
-          </li>
-          <li
-            className={`jumper ${getActiveClass(6, 'active-jumper')}`}
-            onClick={() => toggleTab(6)}
+            Comitees
+          </Link>
+          <Link
+            activeClass='active-jumper'
+            className='jumper'
+            to='partnership'
+            spy={true}
+            smooth={true}
+            duration={500}
           >
-            <a href='#partnership'>Partnership</a>
-          </li>
+            Partnership
+          </Link>
         </ul>
         <a href='/#' className='submit-btn'>
           Submit
