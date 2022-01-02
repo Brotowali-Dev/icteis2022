@@ -3,6 +3,15 @@ import Loading from '../../components/Loading';
 import { useQuery } from '@apollo/client';
 import { LOAD_CALL_FOR_PAPER } from '../../graphql/queries';
 import { useState } from 'react';
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
 
 const CallForPaper = () => {
   const { loading, error, data } = useQuery(LOAD_CALL_FOR_PAPER);
@@ -201,41 +210,58 @@ const CallForPaper = () => {
               <p className='sidebar-title'>fields</p>
               <nav>
                 <ul>
-                  <li className={` ${getActiveClass(1, 'active')}`}>
-                    <a
-                      className={` ${getActiveClass(1, 'active')}`}
-                      onClick={() => toggleTab(1)}
-                      href='#frontend'
+                  <li>
+                    <Link
+                      activeClass='active'
+                      className=' '
+                      to='frontend'
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-50}
                     >
                       Front End Development
-                    </a>
+                    </Link>
                   </li>
-                  <li className={` ${getActiveClass(2, 'active')}`}>
-                    <a
-                      className={` ${getActiveClass(2, 'active')}`}
-                      onClick={() => toggleTab(2)}
-                      href='#security'
+
+                  <li activeClass='active'>
+                    <Link
+                      activeClass='active'
+                      className=' '
+                      to='security'
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-50}
                     >
                       Website Security
-                    </a>
+                    </Link>
                   </li>
-                  <li className={` ${getActiveClass(3, 'active')}`}>
-                    <a
-                      className={` ${getActiveClass(3, 'active')}`}
-                      onClick={() => toggleTab(3)}
-                      href='#ai'
+                  <li>
+                    <Link
+                      activeClass='active'
+                      className=' '
+                      to='ai'
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-50}
                     >
                       Artificial Intelligence
-                    </a>
+                    </Link>
                   </li>
-                  <li className={` ${getActiveClass(4, 'active')}`}>
-                    <a
-                      className={` ${getActiveClass(4, 'active')}`}
-                      onClick={() => toggleTab(4)}
-                      href='#iot'
+                  <li>
+                    <Link
+                      activeClass='active'
+                      className=' '
+                      to='iot'
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-50}
                     >
                       Internet Of Things
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>

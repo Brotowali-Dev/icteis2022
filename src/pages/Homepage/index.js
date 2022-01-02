@@ -27,155 +27,157 @@ const Homepage = () => {
       {/* JUMPER */}
       <Jumper />
       {/* INFO SECTION */}
-      <section className='info' id='about'>
-        <div className='schedule'>
-          <div>
-            <div className='infoTitle'>schedule</div>
-            <div className='infoTime'>{datas.schedule}</div>
+      <div id='about' name='about'>
+        <section className='info'>
+          <div className='schedule'>
+            <div>
+              <div className='infoTitle'>schedule</div>
+              <div className='infoTime'>{datas.schedule}</div>
+            </div>
+            <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
           </div>
-          <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
-        </div>
-        <img className='desktop' src='/assets/divider.svg' alt='divider' />
-        <div className='location'>
-          <div>
-            <div className='infoTitle'>Location</div>
-            <div className='infoTime'>{datas.location}</div>
+          <img className='desktop' src='/assets/divider.svg' alt='divider' />
+          <div className='location'>
+            <div>
+              <div className='infoTitle'>Location</div>
+              <div className='infoTime'>{datas.location}</div>
+            </div>
+            <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
           </div>
-          <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
-        </div>
-        <img className='desktop' src='/assets/divider.svg' alt='divider' />
-        <div className='organizer'>
-          <div>
-            <div className='infoTitle'>Organizer</div>
-            <div className='infoTime'>{datas.organizer}</div>
+          <img className='desktop' src='/assets/divider.svg' alt='divider' />
+          <div className='organizer'>
+            <div>
+              <div className='infoTitle'>Organizer</div>
+              <div className='infoTime'>{datas.organizer}</div>
+            </div>
+            <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
           </div>
-          <img src='/assets/arrowSerongMerah.svg' alt='arflexerong' />
-        </div>
-        <div className='box'>
-          <img src='/assets/player.svg' alt='player' />
-        </div>
-      </section>
-      {/* END INFO SECTION */}
+          <div className='box'>
+            <img src='/assets/player.svg' alt='player' />
+          </div>
+        </section>
+        {/* END INFO SECTION */}
 
-      {/* OVERVIEW SECTION */}
-      <section className='overview'>
-        <div className='about'>
-          <div>
-            <h1 className='overview-title'>Overview</h1>
-            <div className='overviewTitle'>About ICTEIS 2022</div>
-            <div className='overviewBody'>{datas.about}</div>
-          </div>
-          <div className='notes'>
-            <div className='overviewTitle'>Notes from Organizer</div>
-            <div className='overviewBody'>{datas.notes}</div>
-            <div className='quickActions'>
-              <div className='overviewTitle'>Quick Actions</div>
-              <nav>
-                <ul>
-                  <li>
-                    <a href='/call-for-paper'>
-                      <img src='/assets/callforpaper.svg' alt='icon' /> Call For
-                      Paper
-                    </a>
-                  </li>
-                  <li>
-                    <a href='/#'>
-                      <img src='/assets/downloaddocs.svg' alt='icon' />
-                      Download All Docs
-                    </a>
-                  </li>
-                  <li>
-                    <a href='/#'>
-                      <img src='/assets/mail.svg' alt='icon' />
-                      Email Organizer
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+        {/* OVERVIEW SECTION */}
+        <section className='overview'>
+          <div className='about'>
+            <div>
+              <h1 className='overview-title'>Overview</h1>
+              <div className='overviewTitle'>About ICTEIS 2022</div>
+              <div className='overviewBody'>{datas.about}</div>
+            </div>
+            <div className='notes'>
+              <div className='overviewTitle'>Notes from Organizer</div>
+              <div className='overviewBody'>{datas.notes}</div>
+              <div className='quickActions'>
+                <div className='overviewTitle'>Quick Actions</div>
+                <nav>
+                  <ul>
+                    <li>
+                      <a href='/call-for-paper'>
+                        <img src='/assets/callforpaper.svg' alt='icon' /> Call
+                        For Paper
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/#'>
+                        <img src='/assets/downloaddocs.svg' alt='icon' />
+                        Download All Docs
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/#'>
+                        <img src='/assets/mail.svg' alt='icon' />
+                        Email Organizer
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className='overviewImage'>
-          <div className='overviewImage1'>
-            <img
-              className='overviewImage1'
-              src={datas.overviewImage1.url}
-              alt='gambarSatu'
-            />
-          </div>
-          <div className='overviewImage2'>
-            {' '}
-            <img
-              className='overviewImage1'
-              src={datas.overviewImage2.url}
-              alt='gambarDua'
-            />
-          </div>
-        </div>
-      </section>
-      {/* END OVERVIEW SECTION */}
-
-      {/* IMPORTANT DATES SECTION */}
-      <section className='dates'>
-        <h1>Important Dates</h1>
-        <p>{datas.datesDescription}</p>
-        <div className='dateFlow'>
-          <div className='dateWidth'>
-            <div className='dateIconDisable'>
-              <img src='/assets/submission.svg' alt='submissionIcon' />
+          <div className='overviewImage'>
+            <div className='overviewImage1'>
+              <img
+                className='overviewImage1'
+                src={datas.overviewImage1.url}
+                alt='gambarSatu'
+              />
             </div>
-            <div className='dateTitleDisable'>Submission Deadline</div>
-            <div className='dateDatesDisable'>{datas.submissionDeadline}</div>
-          </div>
-
-          <div className='desktop'>
-            <img src='/assets/greyArrowLeft.svg' alt='arrowChevron' />
-          </div>
-          <div className='mobile'>
-            <img src='/assets/chevron-down.svg' alt='arrowChevron' />
-          </div>
-
-          <div>
-            <div className='dateIcon'>
-              <img src='/assets/notification.svg' alt='notificationIcon' />
+            <div className='overviewImage2'>
+              {' '}
+              <img
+                className='overviewImage1'
+                src={datas.overviewImage2.url}
+                alt='gambarDua'
+              />
             </div>
-            <div className='dateTitle'>Notification of Acceptance</div>
-            <div className='dateDates'>{datas.notificationOfAcceptance}</div>
           </div>
+        </section>
+        {/* END OVERVIEW SECTION */}
 
-          <div className='desktop'>
-            <img src='/assets/greyArrowLeft.svg' alt='arrowChevron' />
-          </div>
-          <div className='mobile'>
-            <img src='/assets/chevron-down.svg' alt='arrowChevron' />
-          </div>
-
-          <div>
-            <div className='dateIcon'>
-              <img src='/assets/registration.svg' alt='registrationIcon' />
+        {/* IMPORTANT DATES SECTION */}
+        <section className='dates'>
+          <h1>Important Dates</h1>
+          <p>{datas.datesDescription}</p>
+          <div className='dateFlow'>
+            <div className='dateWidth'>
+              <div className='dateIconDisable'>
+                <img src='/assets/submission.svg' alt='submissionIcon' />
+              </div>
+              <div className='dateTitleDisable'>Submission Deadline</div>
+              <div className='dateDatesDisable'>{datas.submissionDeadline}</div>
             </div>
-            <div className='dateTitle'>Registration Deadline</div>
-            <div className='dateDates'>{datas.registrationDeadline}</div>
-          </div>
 
-          <div className='desktop'>
-            <img src='/assets/greyArrowLeft.svg' alt='arrowChevron' />
-          </div>
-          <div className='mobile'>
-            <img src='/assets/chevron-down.svg' alt='arrowChevron' />
-          </div>
-
-          <div>
-            <div className='dateIcon'>
-              <img src='/assets/conference.svg' alt='conferenceIcon' />
+            <div className='desktop'>
+              <img src='/assets/greyArrowLeft.svg' alt='arrowChevron' />
             </div>
-            <div className='dateTitle'>Conference Date</div>
-            <div className='dateDates'>{datas.conferenceDate}</div>
+            <div className='mobile'>
+              <img src='/assets/chevron-down.svg' alt='arrowChevron' />
+            </div>
+
+            <div>
+              <div className='dateIcon'>
+                <img src='/assets/notification.svg' alt='notificationIcon' />
+              </div>
+              <div className='dateTitle'>Notification of Acceptance</div>
+              <div className='dateDates'>{datas.notificationOfAcceptance}</div>
+            </div>
+
+            <div className='desktop'>
+              <img src='/assets/greyArrowLeft.svg' alt='arrowChevron' />
+            </div>
+            <div className='mobile'>
+              <img src='/assets/chevron-down.svg' alt='arrowChevron' />
+            </div>
+
+            <div>
+              <div className='dateIcon'>
+                <img src='/assets/registration.svg' alt='registrationIcon' />
+              </div>
+              <div className='dateTitle'>Registration Deadline</div>
+              <div className='dateDates'>{datas.registrationDeadline}</div>
+            </div>
+
+            <div className='desktop'>
+              <img src='/assets/greyArrowLeft.svg' alt='arrowChevron' />
+            </div>
+            <div className='mobile'>
+              <img src='/assets/chevron-down.svg' alt='arrowChevron' />
+            </div>
+
+            <div>
+              <div className='dateIcon'>
+                <img src='/assets/conference.svg' alt='conferenceIcon' />
+              </div>
+              <div className='dateTitle'>Conference Date</div>
+              <div className='dateDates'>{datas.conferenceDate}</div>
+            </div>
           </div>
-        </div>
-      </section>
-      {/* END IMPORTANT DATES SECTION */}
+        </section>
+        {/* END IMPORTANT DATES SECTION */}
+      </div>
 
       {/* CALL FOR PAPER SECTION */}
       <CallForPaper />

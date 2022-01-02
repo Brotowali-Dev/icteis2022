@@ -231,12 +231,14 @@ header nav ul li a {
 
 .dropdown-content {
   position: absolute;
+  top: 76px;
   left: 50%;
   transform: translate(-50%);
   width: 996px;
   margin: 0 auto;
   background-color: var(--white);
   display: none;
+  z-index: 555;
 }
 
 .dropdown-content .col {
@@ -261,6 +263,15 @@ header nav ul li a {
   margin-top: 16px;
 }
 
+.disabled-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(30, 32, 41, 0.6);
+  margin-top: 16px;
+}
+
 .dropdown-content .bg-grey {
   background-color: var(--grey);
   width: 332px;
@@ -271,6 +282,14 @@ header nav ul li a {
 }
 
 .backdrop.active {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .backdrop {
   display: block;
 }
 
@@ -430,9 +449,6 @@ footer hr {
   position: relative;
   cursor: pointer;
   border-bottom: transparent 1px solid;
-}
-
-.jumper a {
   text-transform: none;
   font-style: normal;
   font-weight: normal;
@@ -440,6 +456,15 @@ footer hr {
   line-height: 28px;
   color: rgba(30, 32, 41, 0.8);
 }
+
+/* .jumper a {
+  text-transform: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(30, 32, 41, 0.8);
+} */
 
 .active-jumper {
   color: #1455fe;

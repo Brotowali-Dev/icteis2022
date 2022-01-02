@@ -87,10 +87,16 @@ export default function Reviewers() {
           </div>
         </div>
       </div>
-      <h1 id='comitees'>Comitees</h1>
+      <h1
+        style={{ paddingTop: '40px', paddingBottom: '24px' }}
+        id='comitees'
+        name='comitees'
+      >
+        Comitees
+      </h1>
       <div className='row justify-between'>
         <div>
-          <div className='advisory'>Advisory Board</div>
+          <div className='advisory comiteesTitle'>Advisory Board</div>
           <div className='name'>{datas.advisoryBoard1}</div>
           <div className='name'>{datas.advisoryBoard2}</div>
           <div className='name'>{datas.advisoryBoard3}</div>

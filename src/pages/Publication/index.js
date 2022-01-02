@@ -5,6 +5,15 @@ import { useQuery } from '@apollo/client';
 import { LOAD_JOURNAL } from '../../graphql/queries';
 import Loading from '../../components/Loading';
 import { useState } from 'react';
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
 
 const Publication = () => {
   const { loading, data, error } = useQuery(LOAD_JOURNAL);
@@ -140,50 +149,69 @@ const Publication = () => {
             <p className='sidebar-title'>fields</p>
             <nav>
               <ul>
-                <li className={` ${getActiveClass(1, 'active')}`}>
-                  <a
-                    className={` ${getActiveClass(1, 'active')}`}
-                    onClick={() => toggleTab(1)}
-                    href='#engineering'
+                <li>
+                  <Link
+                    activeClass='active'
+                    className=' '
+                    to='engineering'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
                   >
                     Engineering
-                  </a>
+                  </Link>
                 </li>
-                <li className={` ${getActiveClass(2, 'active')}`}>
-                  <a
-                    className={` ${getActiveClass(2, 'active')}`}
-                    onClick={() => toggleTab(2)}
-                    href='#computer'
+                <li>
+                  <Link
+                    activeClass='active'
+                    className=' '
+                    to='computer'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
                   >
                     Computer Engineering
-                  </a>
+                  </Link>
                 </li>
-                <li className={` ${getActiveClass(3, 'active')}`}>
-                  <a
-                    className={` ${getActiveClass(3, 'active')}`}
-                    onClick={() => toggleTab(3)}
-                    href='#electrical'
+                <li>
+                  <Link
+                    activeClass='active'
+                    className=' '
+                    to='electrical'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
                   >
                     Electrical Engineering
-                  </a>
+                  </Link>
                 </li>
-                <li className={` ${getActiveClass(4, 'active')}`}>
-                  <a
-                    className={` ${getActiveClass(4, 'active')}`}
-                    onClick={() => toggleTab(4)}
-                    href='#civil'
+                <li>
+                  <Link
+                    className=''
+                    to='civil'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
                   >
                     Civil Engineering
-                  </a>
+                  </Link>
                 </li>
-                <li className={` ${getActiveClass(5, 'active')}`}>
-                  <a
-                    className={` ${getActiveClass(5, 'active')}`}
-                    onClick={() => toggleTab(5)}
-                    href='#machine'
+                <li>
+                  <Link
+                    activeClass='active'
+                    className=''
+                    to='machine'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-50}
                   >
-                    Mechanic Engineering
-                  </a>
+                    Machine Engineering
+                  </Link>
                 </li>
               </ul>
             </nav>
