@@ -238,7 +238,6 @@ header nav ul li a {
   margin: 0 auto;
   background-color: var(--white);
   display: none;
-  z-index: 555;
 }
 
 .dropdown-content .col {
@@ -282,14 +281,6 @@ header nav ul li a {
 }
 
 .backdrop.active {
-  display: block;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .backdrop {
   display: block;
 }
 
@@ -598,7 +589,7 @@ aside {
     overflow: scroll;
     position: fixed;
     background: var(--white);
-    z-index: 222;
+    z-index: 999;
     display: none !important;
   }
 
@@ -790,6 +781,15 @@ aside {
     font-size: 16px;
     line-height: 28px;
     color: rgba(30, 32, 41, 0.8);
+  }
+
+  .disabled-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(30, 32, 41, 0.6);
+    margin-top: 0;
   }
 
   .submission {
@@ -1041,7 +1041,13 @@ aside {
   }
 
   .jumper {
-    text-align: center;
+    width: 90px;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 32, 41, 0.8);
   }
 
   .jumper a {
