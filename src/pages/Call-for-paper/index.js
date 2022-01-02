@@ -2,29 +2,21 @@ import './Callforpaper.css';
 import Loading from '../../components/Loading';
 import { useQuery } from '@apollo/client';
 import { LOAD_CALL_FOR_PAPER } from '../../graphql/queries';
-import { useState } from 'react';
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll';
+// import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 const CallForPaper = () => {
   const { loading, error, data } = useQuery(LOAD_CALL_FOR_PAPER);
 
-  const [toggleState, setToggleState] = useState(1);
+  // const [toggleState, setToggleState] = useState(1);
 
-  const toggleTab = (index, event) => {
-    setToggleState(index);
-    event.preventDefault();
-  };
+  // const toggleTab = (index, event) => {
+  //   setToggleState(index);
+  //   event.preventDefault();
+  // };
 
-  const getActiveClass = (index, className) =>
-    toggleState === index ? className : '';
+  // const getActiveClass = (index, className) =>
+  //   toggleState === index ? className : '';
 
   if (loading) return <Loading />;
   if (error) return <h1>Error</h1>;

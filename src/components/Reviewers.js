@@ -87,11 +87,7 @@ export default function Reviewers() {
           </div>
         </div>
       </div>
-      <h1
-        style={{ paddingTop: '40px', paddingBottom: '24px' }}
-        id='comitees'
-        name='comitees'
-      >
+      <h1 id='comitees' name='comitees'>
         Comitees
       </h1>
       <div className='row justify-between'>

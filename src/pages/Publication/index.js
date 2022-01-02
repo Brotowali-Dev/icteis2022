@@ -4,29 +4,21 @@ import './Publication.css';
 import { useQuery } from '@apollo/client';
 import { LOAD_JOURNAL } from '../../graphql/queries';
 import Loading from '../../components/Loading';
-import { useState } from 'react';
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll';
+// import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 const Publication = () => {
   const { loading, data, error } = useQuery(LOAD_JOURNAL);
 
-  const [toggleState, setToggleState] = useState(1);
+  // const [toggleState, setToggleState] = useState(1);
 
-  const toggleTab = (index, event) => {
-    setToggleState(index);
-    event.preventDefault();
-  };
+  // const toggleTab = (index, event) => {
+  //   setToggleState(index);
+  //   event.preventDefault();
+  // };
 
-  const getActiveClass = (index, className) =>
-    toggleState === index ? className : '';
+  // const getActiveClass = (index, className) =>
+  //   toggleState === index ? className : '';
 
   if (loading) return <Loading />;
   if (error) return <h1>Error</h1>;

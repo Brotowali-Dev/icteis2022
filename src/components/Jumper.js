@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
 const Jumper = () => {
-  const [toggleState, setToggleState] = useState(1);
+  // const [toggleState, setToggleState] = useState(1);
 
-  const toggleTab = (index, event) => {
-    setToggleState(index);
-    event.preventDefault();
-  };
+  // const toggleTab = (index, event) => {
+  //   setToggleState(index);
+  //   event.preventDefault();
+  // };
 
-  const getActiveClass = (index, className) =>
-    toggleState === index ? className : '';
+  // const getActiveClass = (index, className) =>
+  //   toggleState === index ? className : '';
 
   return (
     <div className='sticky'>
