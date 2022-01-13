@@ -15,6 +15,9 @@ import Presentation from './pages/Presentation-guideline';
 import FullPaper from './pages/Full-paper-guideline';
 import NotFound from './pages/NotFound';
 
+// Components
+import BackToTop from 'react-back-to-top-button';
+
 function App() {
   return (
     <div>
@@ -35,6 +38,21 @@ function App() {
           <Route exact path='/full-paper-guideline' element={<FullPaper />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
+
+        <BackToTop
+          showAt={100}
+          speed={1500}
+          easing='easeInOutSine'
+          style={{
+            zIndex: 4,
+            margin: '16px',
+            background: '#1455fe',
+            padding: '5px 20px',
+            borderRadius: '4px',
+          }}
+        >
+          <img src='/assets/totop.svg' alt='totop' />
+        </BackToTop>
 
         <Footer />
       </Router>

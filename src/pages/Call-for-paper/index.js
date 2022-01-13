@@ -30,7 +30,6 @@ const CallForPaper = () => {
         <div className='heroContent'>
           <h1>{datas.title}</h1>
           <hr className='hr' />
-          <p>{datas.deskripsi}</p>
         </div>
       </div>
       {/* ENDING HERO */}

@@ -20,7 +20,6 @@ const Fees = () => {
         <div className='fees-heroContent'>
           <h1>{datas.title}</h1>
           <hr className='hr' />
-          <p>{datas.deskripsi}</p>
         </div>
       </div>
       <main className='fees-container'>
