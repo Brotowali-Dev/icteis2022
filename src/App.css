@@ -234,7 +234,8 @@ header nav ul li a {
   top: 76px;
   left: 50%;
   transform: translate(-50%);
-  width: 996px;
+  /* width: 996px; */
+  width: 700px;
   margin: 0 auto;
   background-color: var(--white);
   display: none;
@@ -419,7 +420,7 @@ footer hr {
   justify-content: space-between;
   padding: 0 120px;
   align-items: center;
-  gap: 454px;
+  gap: 350px;
 }
 
 .jumper-tab-list {
