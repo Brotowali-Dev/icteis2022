@@ -1,0 +1,17 @@
+[
+    {
+      "id": 123,
+      "address": [
+        {
+          "id": 1234,
+          "country": "Indonesia",
+          "city": "Jakarta",
+          "street": "Menara PLN, Jl. Lkr. Luar Barat, RT.1/RW.1, Duri Kosambi, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11750",
+          "postcode": "11750",
+          "lat": "-6.168238921714012",
+          "lng": "106.72643963192544"
+        }
+      ]
+    }
+  ]
+  

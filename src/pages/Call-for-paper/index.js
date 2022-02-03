@@ -1,12 +1,17 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import "./Callforpaper.css";
 import Loading from "../../components/Loading";
 import { useQuery } from "@apollo/client";
 import { LOAD_CALL_FOR_PAPER } from "../../graphql/queries";
+import ImportantDates from "../../components/ImportantDates";
 // import { useState } from 'react';
 import { Link } from "react-scroll";
+import Map from "../../components/Map";
+const locations = require("./location.json");
 
 const CallForPaper = () => {
   const { loading, error, data } = useQuery(LOAD_CALL_FOR_PAPER);
+  // console.log("called here", data);
 
   // const [toggleState, setToggleState] = useState(1);
 
@@ -33,6 +38,7 @@ const CallForPaper = () => {
         </div>
       </div>
       {/* ENDING HERO */}
+      <ImportantDates />
 
       <div className="call-for-paper-container">
         <div className="call-for-paper-flex">
@@ -44,6 +50,7 @@ const CallForPaper = () => {
                 Topic Interest submission limited into :
               </div>
             </section>
+
             {/* END MAIN */}
             {/* PUBLICATION */}
             <section className="publications" id="frontend">
@@ -276,6 +283,7 @@ const CallForPaper = () => {
           </div>
         </div>
       </div>
+      <Map locations={locations} />
     </div>
   );
 };

@@ -542,6 +542,21 @@ aside {
   top: 120px;
 }
 
+.map-container{
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%; */
+  height: 400px;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+
 /* =============================== */
 /*          TABLET VERSION         */
 /* =============================== */
