@@ -39,6 +39,10 @@ hr {
   display: flex;
   align-items: center;
 }
+.flex-start{
+  display: flex;
+  align-items: flex-start;
+}
 
 .wraps {
   flex-wrap: wrap;
@@ -892,6 +896,9 @@ aside {
 
   .flex {
     overflow-x: scroll;
+  }
+  .flex-start{
+    gap: 10px;
   }
 
   /* FOOTER STYLE */
