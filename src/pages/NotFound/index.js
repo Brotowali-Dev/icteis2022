@@ -1,12 +1,13 @@
+import React from "react";
 export default function NotFound() {
   return (
     <div
       style={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        height: '400px',
-        justifyContent: 'center',
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        height: "400px",
+        justifyContent: "center",
       }}
     >
       <h1>OOOPPPSSSS</h1>

@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
+import React from "react";
 import "./Callforpaper.css";
 import { useQuery } from "@apollo/client";
 import { LOAD_CALL_FOR_PAPER } from "../../graphql/queries";

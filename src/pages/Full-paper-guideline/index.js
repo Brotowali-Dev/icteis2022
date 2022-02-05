@@ -1,10 +1,11 @@
-import './index.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./index.css";
+import { Link } from "react-router-dom";
 
 // Graph QL
-import { useQuery } from '@apollo/client';
-import { LOAD_FULL_PAPER } from '../../graphql/queries';
-import Loading from '../../components/Loading';
+import { useQuery } from "@apollo/client";
+import { LOAD_FULL_PAPER } from "../../graphql/queries";
+import Loading from "../../components/Loading";
 
 const FullPaperGuideline = () => {
   const { loading, error, data } = useQuery(LOAD_FULL_PAPER);
@@ -17,22 +18,22 @@ const FullPaperGuideline = () => {
   return (
     <div>
       {/* HERO */}
-      <div className='guideline-hero'>
-        <div className='guideline-heroContent'>
+      <div className="guideline-hero">
+        <div className="guideline-heroContent">
           <h1>{datas.title}</h1>
-          <hr className='hr' />
+          <hr className="hr" />
         </div>
       </div>
       {/* ENDING HERO */}
 
-      <div className='guideline-container'>
-        <div className='guideline-main'>
-          <div className='left'>
+      <div className="guideline-container">
+        <div className="guideline-main">
+          <div className="left">
             {/* Guideline Structure */}
-            <div className='guideline'>
-              <h2 className='titleSection'>Guidelines Structure</h2>
+            <div className="guideline">
+              <h2 className="titleSection">Guidelines Structure</h2>
               <p
-                className='guideline-text'
+                className="guideline-text"
                 dangerouslySetInnerHTML={{
                   __html: datas.guidelineStructure.html,
                 }}
@@ -40,53 +41,53 @@ const FullPaperGuideline = () => {
             </div>
             {/* End Guideline Structure */}
             {/* Submission Steps */}
-            <h2 className='titleSection'>Submisson Steps</h2>
-            <div className='paymentProcess'>
-              <div className='paymentTitle'>
+            <h2 className="titleSection">Submisson Steps</h2>
+            <div className="paymentProcess">
+              <div className="paymentTitle">
                 <span>1</span> {datas.submissionStep1}
               </div>
-              <div className='paymentDescription'>
+              <div className="paymentDescription">
                 <p
-                  className='guideline-text'
+                  className="guideline-text"
                   dangerouslySetInnerHTML={{
                     __html: datas.submissionStepDeksripsi1.html,
                   }}
                 ></p>
-                <div className='confirmPayment'>
+                <div className="confirmPayment">
                   After that, you can confirm your payment here:
-                  <a href='/#' className='confirmBtn'>
+                  <a href="/#" className="confirmBtn">
                     Confirm my Payment
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className='paymentProcess'>
-              <div className='paymentTitle'>
+            <div className="paymentProcess">
+              <div className="paymentTitle">
                 <span>2</span> {datas.submissionStep2}
               </div>
               {/* <div className='paymentSubTitle'>
                 Wait for the next 2-3 Business Day
               </div> */}
-              <div className='paymentDescription'>
+              <div className="paymentDescription">
                 <p
                   dangerouslySetInnerHTML={{
                     __html: datas.submissionStepDeksripsi2.html,
                   }}
                 ></p>
-                <div className='contact'>
-                  Have any questions about the the instruction?{' '}
-                  <a href='/#'>Contact us</a>
+                <div className="contact">
+                  Have any questions about the the instruction?{" "}
+                  <a href="/#">Contact us</a>
                 </div>
               </div>
             </div>
             {/* End Submission Steps */}
 
             {/* Review Process */}
-            <div className='guideline'>
-              <h2 className='titleSection'>Review Process</h2>
+            <div className="guideline">
+              <h2 className="titleSection">Review Process</h2>
               <p
-                className='guideline-text'
+                className="guideline-text"
                 dangerouslySetInnerHTML={{
                   __html: datas.reviewProcessDeskripsi.html,
                 }}
@@ -94,42 +95,42 @@ const FullPaperGuideline = () => {
             </div>
             {/* End Review Process */}
           </div>
-          <div className='sidebar'>
-            <div className='guideline-links'>
-              <img src='/assets/copylink.svg' alt='copylink' /> Copy Link
+          <div className="sidebar">
+            <div className="guideline-links">
+              <img src="/assets/copylink.svg" alt="copylink" /> Copy Link
             </div>
-            <div className='linksTitle'>Other Guideline</div>
-            <Link to='/abstract-guideline' className='guideline-links'>
-              <img src='/assets/abstract.svg' alt='copylink' /> Abstract
+            <div className="linksTitle">Other Guideline</div>
+            <Link to="/abstract-guideline" className="guideline-links">
+              <img src="/assets/abstract.svg" alt="copylink" /> Abstract
             </Link>
             <Link
-              to='/presentation-guideline'
-              className='guideline-links mt-12'
+              to="/presentation-guideline"
+              className="guideline-links mt-12"
             >
-              <img src='/assets/fresentation.svg' alt='copylink' /> Presentation
+              <img src="/assets/fresentation.svg" alt="copylink" /> Presentation
             </Link>
-            <div className='linksTitle'>Download Docs</div>
+            <div className="linksTitle">Download Docs</div>
             <a
               href={datas.downloadAllGuideline.url}
-              className='guideline-links'
+              className="guideline-links"
             >
               All Guideline
             </a>
             <a
               href={datas.downloadArticle.url}
-              className='guideline-links mt-12'
+              className="guideline-links mt-12"
             >
               Article Preparation
             </a>
             <a
               href={datas.downloadPaperTemplate.url}
-              className='guideline-links mt-12'
+              className="guideline-links mt-12"
             >
               Paper Template
             </a>
             <a
               href={datas.downloadCopyright.url}
-              className='guideline-links mt-12'
+              className="guideline-links mt-12"
             >
               Copyright Checklist
             </a>
@@ -137,27 +138,27 @@ const FullPaperGuideline = () => {
         </div>
       </div>
       {/* CARD CONTAINER */}
-      <div className='cardContainer'>
-        <div className='card'>
-          <div className='cardContent'>
-            <div className='cardTitle'>Download Full Paper Guidline</div>
-            <div className='cardDescription'>
+      <div className="cardContainer">
+        <div className="card">
+          <div className="cardContent">
+            <div className="cardTitle">Download Full Paper Guidline</div>
+            <div className="cardDescription">
               {datas.downloadAbstractGuideline}
             </div>
-            <div className='guideline-flex'>
-              <a href={datas.download.url} className='cardbtn'>
+            <div className="guideline-flex">
+              <a href={datas.download.url} className="cardbtn">
                 Download
               </a>
               <a
                 href={datas.downloadAllGuideline.url}
-                className='btnDownloadAll'
+                className="btnDownloadAll"
               >
                 Download All Guideline
               </a>
             </div>
           </div>
           <div>
-            <img src='/assets/submitpaperimage.svg' alt='submitimage' />
+            <img src="/assets/submitpaperimage.svg" alt="submitimage" />
           </div>
         </div>
       </div>

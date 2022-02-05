@@ -1,11 +1,12 @@
-import JournalCard from '../../components/JournalCard';
-import './Publication.css';
+import React from "react";
+import JournalCard from "../../components/JournalCard";
+import "./Publication.css";
 
-import { useQuery } from '@apollo/client';
-import { LOAD_JOURNAL } from '../../graphql/queries';
-import Loading from '../../components/Loading';
+import { useQuery } from "@apollo/client";
+import { LOAD_JOURNAL } from "../../graphql/queries";
+import Loading from "../../components/Loading";
 // import { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const Publication = () => {
   const { loading, data, error } = useQuery(LOAD_JOURNAL);
@@ -25,14 +26,14 @@ const Publication = () => {
 
   return (
     <div>
-      <div className='publication-hero'>
+      <div className="publication-hero">
         <h1>Publication</h1>
       </div>
-      <div className='publication-container' id='publicationPage'>
-        <div id='publication'>
-          <article id='engineering'>
-            <h2 className='subTitle'>Combined Engineering</h2>
-            <p className='publication-text'>
+      <div className="publication-container" id="publicationPage">
+        <div id="publication">
+          <article id="engineering">
+            <h2 className="subTitle">Combined Engineering</h2>
+            <p className="publication-text">
               Publication in Combined Engineering fields
             </p>
             {data.publications.map((cat) => {
@@ -51,9 +52,9 @@ const Publication = () => {
             })}
           </article>
 
-          <article id='computer'>
-            <h2 className='subTitle'>Computer Engineering</h2>
-            <p className='publication-text'>
+          <article id="computer">
+            <h2 className="subTitle">Computer Engineering</h2>
+            <p className="publication-text">
               Publication in Combined Engineering fields
             </p>
             {data.publications.map((cat) => {
@@ -72,9 +73,9 @@ const Publication = () => {
             })}
           </article>
 
-          <article id='electrical'>
-            <h2 className='subTitle'>Electrical Engineering</h2>
-            <p className='publication-text'>
+          <article id="electrical">
+            <h2 className="subTitle">Electrical Engineering</h2>
+            <p className="publication-text">
               Publication in Combined Engineering fields
             </p>
             {data.publications.map((cat) => {
@@ -93,9 +94,9 @@ const Publication = () => {
             })}
           </article>
 
-          <article id='civil'>
-            <h2 className='subTitle'>Civil Engineering</h2>
-            <p className='publication-text'>
+          <article id="civil">
+            <h2 className="subTitle">Civil Engineering</h2>
+            <p className="publication-text">
               Publication in Combined Engineering fields
             </p>
             {data.publications.map((cat) => {
@@ -114,9 +115,9 @@ const Publication = () => {
             })}
           </article>
 
-          <article id='machine'>
-            <h2 className='subTitle'>Machine Engineering</h2>
-            <p className='publication-text'>
+          <article id="machine">
+            <h2 className="subTitle">Machine Engineering</h2>
+            <p className="publication-text">
               Publication in Combined Engineering fields
             </p>
             {data.publications.map((cat) => {
@@ -137,15 +138,15 @@ const Publication = () => {
         </div>
 
         <aside>
-          <div className='menu-card'>
-            <p className='sidebar-title'>fields</p>
+          <div className="menu-card">
+            <p className="sidebar-title">fields</p>
             <nav>
               <ul>
                 <li>
                   <Link
-                    activeClass='active'
-                    className=' '
-                    to='engineering'
+                    activeClass="active"
+                    className=" "
+                    to="engineering"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -156,9 +157,9 @@ const Publication = () => {
                 </li>
                 <li>
                   <Link
-                    activeClass='active'
-                    className=' '
-                    to='computer'
+                    activeClass="active"
+                    className=" "
+                    to="computer"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -169,9 +170,9 @@ const Publication = () => {
                 </li>
                 <li>
                   <Link
-                    activeClass='active'
-                    className=' '
-                    to='electrical'
+                    activeClass="active"
+                    className=" "
+                    to="electrical"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -182,8 +183,8 @@ const Publication = () => {
                 </li>
                 <li>
                   <Link
-                    className=''
-                    to='civil'
+                    className=""
+                    to="civil"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -194,9 +195,9 @@ const Publication = () => {
                 </li>
                 <li>
                   <Link
-                    activeClass='active'
-                    className=''
-                    to='machine'
+                    activeClass="active"
+                    className=""
+                    to="machine"
                     spy={true}
                     smooth={true}
                     duration={500}
