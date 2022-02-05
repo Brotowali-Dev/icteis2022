@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { LOAD_INFO_OVERVIEW } from "../graphql/queries";
+import { LOAD_INFO_OVERVIEW } from "@/graphql/queries";
 import Loading from "./Loading";
 
 const ImportantDates = () => {

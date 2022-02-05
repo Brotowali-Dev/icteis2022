@@ -2,12 +2,12 @@
 import React from "react";
 import "./Callforpaper.css";
 import { useQuery } from "@apollo/client";
-import { LOAD_CALL_FOR_PAPER } from "../../graphql/queries";
+import { LOAD_CALL_FOR_PAPER } from "@/graphql/queries";
 // import { Link } from "react-scroll";
-import Loading from "../../components/Loading";
-import ImportantDates from "../../components/ImportantDates";
-import Scope from "../../components/Scope";
-import Map from "../../components/Map";
+import Loading from "@/components/Loading";
+import ImportantDates from "@/components/ImportantDates";
+import Scope from "@/components/Scope";
+import Map from "@/components/Map";
 const locations = require("./location.json");
 
 const CallForPaper = () => {

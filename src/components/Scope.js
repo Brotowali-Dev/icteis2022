@@ -1,9 +1,8 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { LOAD_CALL_FOR_PAPER } from "../graphql/queries";
+import { LOAD_CALL_FOR_PAPER } from "@/graphql/queries";
 import Loading from "./Loading";
-
-import "../pages/Call-for-paper/Callforpaper.css";
+import "@/pages/Call-for-paper/Callforpaper.css";
 
 const Scope = () => {
   const { loading, error, data } = useQuery(LOAD_CALL_FOR_PAPER);

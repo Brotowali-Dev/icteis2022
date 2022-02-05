@@ -3,17 +3,17 @@ import "./Homepage.css";
 
 // Graph QL
 import { useQuery } from "@apollo/client";
-import { LOAD_INFO_OVERVIEW } from "../../graphql/queries";
+import { LOAD_INFO_OVERVIEW } from "@/graphql/queries";
 
 // Components
-import Hero from "../../components/Hero";
-import Partnership from "../../components/Partnership";
-import Speakers from "../../components/Speakers";
-import Reviewers from "../../components/Reviewers";
-import ImportantDates from "../../components/ImportantDates";
-// import CallForPaper from "../../components/CallForPaper";
-import Loading from "../../components/Loading";
-import Jumper from "../../components/Jumper";
+import Hero from "@/components/Hero";
+import Partnership from "@/components/Partnership";
+import Speakers from "@/components/Speakers";
+import Reviewers from "@/components/Reviewers";
+import ImportantDates from "@/components/ImportantDates";
+// import CallForPaper from "@/components/CallForPaper";
+import Loading from "@/components/Loading";
+import Jumper from "@/components/Jumper";
 
 const Homepage = () => {
   const { loading, error, data } = useQuery(LOAD_INFO_OVERVIEW);

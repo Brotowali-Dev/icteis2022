@@ -3,10 +3,10 @@ import "./Fees.css";
 
 // Graph QL
 import { useQuery } from "@apollo/client";
-import { LOAD_FEES } from "../../graphql/queries";
-import Loading from "../../components/Loading";
-import Tabs from "../../components/Tabs";
-import TransferTab from "../../components/TransferTab";
+import { LOAD_FEES } from "@/graphql/queries";
+import Loading from "@/components/Loading";
+import Tabs from "@/components/Tabs";
+import TransferTab from "@/components/TransferTab";
 
 const Fees = () => {
   const { loading, error, data } = useQuery(LOAD_FEES);

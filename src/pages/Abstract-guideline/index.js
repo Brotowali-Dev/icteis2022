@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 // GRAPH QL
 import { useQuery } from "@apollo/client";
-import { LOAD_ABSTRACT } from "../../graphql/queries";
-import Loading from "../../components/Loading";
+import { LOAD_ABSTRACT } from "@/graphql/queries";
+import Loading from "@/components/Loading";
 
 const AbstractGuideline = () => {
   const { loading, data, error } = useQuery(LOAD_ABSTRACT);

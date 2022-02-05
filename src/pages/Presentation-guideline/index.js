@@ -2,11 +2,11 @@ import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 
-import Loading from "../../components/Loading";
+import Loading from "@/components/Loading";
 
 // Graph QL
 import { useQuery } from "@apollo/client";
-import { LOAD_PRESENTATION } from "../../graphql/queries";
+import { LOAD_PRESENTATION } from "@/graphql/queries";
 
 const PresentationGuideline = () => {
   const { loading, error, data } = useQuery(LOAD_PRESENTATION);

@@ -1,10 +1,10 @@
 import React from "react";
-import JournalCard from "../../components/JournalCard";
+import JournalCard from "@/components/JournalCard";
 import "./Publication.css";
 
 import { useQuery } from "@apollo/client";
-import { LOAD_JOURNAL } from "../../graphql/queries";
-import Loading from "../../components/Loading";
+import { LOAD_JOURNAL } from "@/graphql/queries";
+import Loading from "@/components/Loading";
 // import { useState } from 'react';
 import { Link } from "react-scroll";
 
