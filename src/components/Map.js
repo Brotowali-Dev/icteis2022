@@ -25,6 +25,7 @@ class Map extends React.Component {
       // Important! Always set the container height explicitly
       //   <div style={{ display: "flex", justifyContent: "center" }}>
       <div className="cardContainer">
+        <h1>Conference Venue?</h1>
         <div className="map-container">
           <GoogleMapReact
             bootstrapURLKeys={{

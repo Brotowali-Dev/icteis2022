@@ -41,10 +41,10 @@ const CallForPaper = () => {
       {/* IMPORTAN DATES */}
       <ImportantDates />
       {/* END IMPORTANT DATES */}
-      <section className="main">
+      {/* <section className="main">
         <p>{datas.penjelasan}</p>
         <div className="text">Topic Interest submission limited into :</div>
-      </section>
+      </section> */}
       {/* SCOPE */}
       <Scope />
       {/* END SCOPE */}

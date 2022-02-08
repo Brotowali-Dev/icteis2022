@@ -13,8 +13,13 @@ const Scope = () => {
 
   const datas = data.callForPapers[0];
   return (
-    <>
+    <div>
       {/* PUBLICATION */}
+      <div className="header" style={{ background: "none" }}>
+        <h1>Topics of Interest </h1>
+        <p>{datas.penjelasan}</p>
+        <p>Topic Interest submission limited into :</p>
+      </div>
       <section className="publications" id="frontend">
         <h2>{datas.judul1}</h2>
         <p>{datas.deskripsi1}</p>
@@ -199,7 +204,7 @@ const Scope = () => {
       </section>
 
       {/* END PUBLICATION */}
-    </>
+    </div>
   );
 };
 
