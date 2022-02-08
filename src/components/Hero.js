@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { LOAD_HERO } from "@/graphql/queries";
 
-function Hero() {
+const Hero = () => {
   const { loading, data, error } = useQuery(LOAD_HERO);
   if (error) return <h1>Error</h1>;
   if (loading)
@@ -45,6 +45,6 @@ function Hero() {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

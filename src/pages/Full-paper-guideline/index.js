@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 // Graph QL
 import { useQuery } from "@apollo/client";
-import { LOAD_FULL_PAPER } from "@/graphql/queries";
+import { LOAD_FULL_PAPER } from "@/graphql/queries/index";
 import Loading from "@/components/Loading";
 
 const FullPaperGuideline = () => {

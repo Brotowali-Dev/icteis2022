@@ -3,7 +3,7 @@ import JournalCard from "@/components/JournalCard";
 import "./Publication.css";
 
 import { useQuery } from "@apollo/client";
-import { LOAD_JOURNAL } from "@/graphql/queries";
+import { LOAD_JOURNAL } from "@/graphql/queries/index";
 import Loading from "@/components/Loading";
 // import { useState } from 'react';
 import { Link } from "react-scroll";

@@ -2,7 +2,7 @@
 import React from "react";
 import "./Callforpaper.css";
 import { useQuery } from "@apollo/client";
-import { LOAD_CALL_FOR_PAPER } from "@/graphql/queries";
+import { LOAD_CALL_FOR_PAPER } from "@/graphql/queries/index";
 // import { Link } from "react-scroll";
 import Loading from "@/components/Loading";
 import ImportantDates from "@/components/ImportantDates";

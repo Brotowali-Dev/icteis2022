@@ -6,7 +6,7 @@ import Loading from "@/components/Loading";
 
 // Graph QL
 import { useQuery } from "@apollo/client";
-import { LOAD_PRESENTATION } from "@/graphql/queries";
+import { LOAD_PRESENTATION } from "@/graphql/queries/index";
 
 const PresentationGuideline = () => {
   const { loading, error, data } = useQuery(LOAD_PRESENTATION);

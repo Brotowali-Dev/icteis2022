@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 // GRAPH QL
 import { useQuery } from "@apollo/client";
-import { LOAD_ABSTRACT } from "@/graphql/queries";
+import { LOAD_ABSTRACT } from "@/graphql/queries/index";
 import Loading from "@/components/Loading";
 
 const AbstractGuideline = () => {
