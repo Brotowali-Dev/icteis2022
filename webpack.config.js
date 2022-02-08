@@ -11,7 +11,7 @@ module.exports = {
     chunkFilename: "assets/js/[name].[hash].js",
     filename: "assets/js/[name].[hash].js",
     publicPath: "/",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
   },
   module: {
     rules: [
