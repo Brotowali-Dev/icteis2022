@@ -10,8 +10,8 @@ module.exports = merge(baseConfig, {
     port: 90,
     allowedHosts: ["test.icteis.com"],
     open: true,
-    // proxy: {
-    //   "/core": process.env.CORE_WEB_URL,
-    // },
+    proxy: {
+      "/core": process.env.CORE_WEB_URL,
+    },
   },
 });
