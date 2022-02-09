@@ -4,8 +4,8 @@ import './Fees.css';
 import { useQuery } from '@apollo/client';
 import { LOAD_FEES } from '../../graphql/queries';
 import Loading from '../../components/Loading';
-import Tabs from '../../components/Tabs';
-import TransferTab from '../../components/TransferTab';
+import Tabs from '../../components/Tabs'; // eslint-disable-line
+import TransferTab from '../../components/TransferTab'; // eslint-disable-line
 
 const Fees = () => {
   const { loading, error, data } = useQuery(LOAD_FEES);

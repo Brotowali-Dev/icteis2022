@@ -5,7 +5,7 @@ import PublicationElectrical from '../../components/PublicationElectrical';
 import PublicationCivil from '../../components/PublicationCivil';
 import PublicationMachine from '../../components/PublicationMachine';
 
-import { Link } from 'react-scroll';
+import { Link } from 'react-scroll'; // eslint-disable-line
 
 const Publication = () => {
   return (

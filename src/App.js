@@ -16,7 +16,7 @@ import FullPaper from './pages/Full-paper-guideline';
 import NotFound from './pages/NotFound';
 
 // Components
-import BackToTop from 'react-back-to-top-button';
+import BackToTop from 'react-back-to-top-button'; // eslint-disable-line
 
 function App() {
   return (
