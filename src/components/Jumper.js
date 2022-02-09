@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import React from "react";
+import { Link } from "react-scroll";
 
 const Jumper = () => {
   // const [toggleState, setToggleState] = useState(1);
@@ -13,13 +13,13 @@ const Jumper = () => {
   //   toggleState === index ? className : '';
 
   return (
-    <div className='sticky'>
-      <div className='jumper-container'>
-        <ul className='jumper-tab-list'>
+    <div className="sticky">
+      <div className="jumper-container">
+        <ul className="jumper-tab-list">
           <Link
-            activeClass='active-jumper'
-            className='jumper'
-            to='about'
+            activeClass="active-jumper"
+            className="jumper"
+            to="about"
             spy={true}
             offset={-70}
             smooth={true}
@@ -29,6 +29,16 @@ const Jumper = () => {
           </Link>
 
           <Link
+            activeClass="active-jumper"
+            className="jumper"
+            to="importantdates"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Important Dates
+          </Link>
+          {/* <Link
             activeClass='active-jumper'
             className='jumper'
             to='callForPaper'
@@ -37,11 +47,11 @@ const Jumper = () => {
             duration={500}
           >
             Call For Paper
-          </Link>
+          </Link> */}
           <Link
-            activeClass='active-jumper'
-            className='jumper'
-            to='speakers'
+            activeClass="active-jumper"
+            className="jumper"
+            to="speakers"
             spy={true}
             smooth={true}
             duration={500}
@@ -49,9 +59,9 @@ const Jumper = () => {
             Speakers
           </Link>
           <Link
-            activeClass='active-jumper'
-            className='jumper'
-            to='reviewers'
+            activeClass="active-jumper"
+            className="jumper"
+            to="reviewers"
             spy={true}
             smooth={true}
             duration={500}
@@ -59,9 +69,9 @@ const Jumper = () => {
             Reviewers
           </Link>
           <Link
-            activeClass='active-jumper'
-            className='jumper'
-            to='comitees'
+            activeClass="active-jumper"
+            className="jumper"
+            to="comitees"
             spy={true}
             offset={-90}
             smooth={true}
@@ -70,9 +80,9 @@ const Jumper = () => {
             Comitees
           </Link>
           <Link
-            activeClass='active-jumper'
-            className='jumper'
-            to='partnership'
+            activeClass="active-jumper"
+            className="jumper"
+            to="partnership"
             spy={true}
             smooth={true}
             duration={500}
@@ -80,7 +90,7 @@ const Jumper = () => {
             Partnership
           </Link>
         </ul>
-        <a href='/#' className='submit-btn'>
+        <a href="/#" className="submit-btn">
           Submit
         </a>
       </div>
