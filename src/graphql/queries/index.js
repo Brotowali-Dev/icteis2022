@@ -401,6 +401,74 @@ export const LOAD_FULL_PAPER = gql`
   }
 `;
 
+export const LOAD_PUBLICATION_COMPUTER = gql`
+  query getPublicationComputer {
+    publicationsComputer {
+      id
+      gambarJurnal {
+        url
+      }
+      judulJurnal
+      hashtag
+      deskripsi
+      tanggalPublished
+      volumeJurnal
+      linkJurnal
+    }
+  }
+`;
+
+export const LOAD_PUBLICATION_ELECTRICAL = gql`
+  query getPublicationElectrical {
+    publicationsElectrical {
+      id
+      gambarJurnal {
+        url
+      }
+      judulJurnal
+      hashtag
+      deskripsi
+      tanggalPublished
+      volumeJurnal
+      linkJurnal
+    }
+  }
+`;
+
+export const LOAD_PUBLICATION_CIVIL = gql`
+  query getPublicationCivil {
+    publicationsCivil {
+      id
+      gambarJurnal {
+        url
+      }
+      judulJurnal
+      hashtag
+      deskripsi
+      tanggalPublished
+      volumeJurnal
+      linkJurnal
+    }
+  }
+`;
+
+export const LOAD_PUBLICATION_MACHINE = gql`
+  query getPublicationMachine {
+    publicationsMachine {
+      id
+      gambarJurnal {
+        url
+      }
+      judulJurnal
+      hashtag
+      deskripsi
+      tanggalPublished
+      volumeJurnal
+      linkJurnal
+    }
+  }
+`;
+
 export const LOAD_CALL_FOR_PAPER = gql`
   query getCallForPaper {
     callForPapers {

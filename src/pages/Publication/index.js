@@ -1,28 +1,13 @@
-import JournalCard from '../../components/JournalCard';
 import './Publication.css';
+import PublicationEngineering from '../../components/PublicationEngineering.js';
+import PublicationComputer from '../../components/PublicationComputer';
+import PublicationElectrical from '../../components/PublicationElectrical';
+import PublicationCivil from '../../components/PublicationCivil';
+import PublicationMachine from '../../components/PublicationMachine';
 
-import { useQuery } from '@apollo/client';
-import { LOAD_JOURNAL } from '../../graphql/queries';
-import Loading from '../../components/Loading';
-// import { useState } from 'react';
 import { Link } from 'react-scroll';
 
 const Publication = () => {
-  const { loading, data, error } = useQuery(LOAD_JOURNAL);
-
-  // const [toggleState, setToggleState] = useState(1);
-
-  // const toggleTab = (index, event) => {
-  //   setToggleState(index);
-  //   event.preventDefault();
-  // };
-
-  // const getActiveClass = (index, className) =>
-  //   toggleState === index ? className : '';
-
-  if (loading) return <Loading />;
-  if (error) return <h1>Error</h1>;
-
   return (
     <div>
       <div className='publication-hero'>
@@ -30,110 +15,11 @@ const Publication = () => {
       </div>
       <div className='publication-container' id='publicationPage'>
         <div id='publication'>
-          <article id='engineering'>
-            <h2 className='subTitle'>Combined Engineering</h2>
-            <p className='publication-text'>
-              Publication in Combined Engineering fields
-            </p>
-            {data.publications.map((cat) => {
-              return (
-                <JournalCard
-                  judul={cat.judulJurnal}
-                  gambar={cat.gambarJurnal.url}
-                  hashtag={cat.hashtag}
-                  tanggal={cat.tanggalPublished}
-                  volume={cat.volumeJurnal}
-                  deskripsi={cat.deskripsi}
-                  links={cat.linkJurnal}
-                  key={cat.id}
-                />
-              );
-            })}
-          </article>
-
-          <article id='computer'>
-            <h2 className='subTitle'>Computer Engineering</h2>
-            <p className='publication-text'>
-              Publication in Combined Engineering fields
-            </p>
-            {data.publications.map((cat) => {
-              return (
-                <JournalCard
-                  judul={cat.judulJurnal}
-                  gambar={cat.gambarJurnal.url}
-                  hashtag={cat.hashtag}
-                  tanggal={cat.tanggalPublished}
-                  volume={cat.volumeJurnal}
-                  deskripsi={cat.deskripsi}
-                  links={cat.linkJurnal}
-                  key={cat.id}
-                />
-              );
-            })}
-          </article>
-
-          <article id='electrical'>
-            <h2 className='subTitle'>Electrical Engineering</h2>
-            <p className='publication-text'>
-              Publication in Combined Engineering fields
-            </p>
-            {data.publications.map((cat) => {
-              return (
-                <JournalCard
-                  judul={cat.judulJurnal}
-                  gambar={cat.gambarJurnal.url}
-                  hashtag={cat.hashtag}
-                  tanggal={cat.tanggalPublished}
-                  volume={cat.volumeJurnal}
-                  deskripsi={cat.deskripsi}
-                  links={cat.linkJurnal.url}
-                  key={cat.id}
-                />
-              );
-            })}
-          </article>
-
-          <article id='civil'>
-            <h2 className='subTitle'>Civil Engineering</h2>
-            <p className='publication-text'>
-              Publication in Combined Engineering fields
-            </p>
-            {data.publications.map((cat) => {
-              return (
-                <JournalCard
-                  judul={cat.judulJurnal}
-                  gambar={cat.gambarJurnal.url}
-                  hashtag={cat.hashtag}
-                  tanggal={cat.tanggalPublished}
-                  volume={cat.volumeJurnal}
-                  deskripsi={cat.deskripsi}
-                  links={cat.linkJurnal}
-                  key={cat.id}
-                />
-              );
-            })}
-          </article>
-
-          <article id='machine'>
-            <h2 className='subTitle'>Machine Engineering</h2>
-            <p className='publication-text'>
-              Publication in Combined Engineering fields
-            </p>
-            {data.publications.map((cat) => {
-              return (
-                <JournalCard
-                  judul={cat.judulJurnal}
-                  gambar={cat.gambarJurnal.url}
-                  hashtag={cat.hashtag}
-                  tanggal={cat.tanggalPublished}
-                  volume={cat.volumeJurnal}
-                  deskripsi={cat.deskripsi}
-                  links={cat.linkJurnal}
-                  key={cat.id}
-                />
-              );
-            })}
-          </article>
+          <PublicationEngineering />
+          <PublicationComputer />
+          <PublicationElectrical />
+          <PublicationCivil />
+          <PublicationMachine />
         </div>
 
         <aside>
@@ -215,3 +101,23 @@ const Publication = () => {
 };
 
 export default Publication;
+
+// import { useQuery } from '@apollo/client';
+// import { LOAD_JOURNAL } from '../../graphql/queries';
+// import Loading from '../../components/Loading';
+// import { useState } from 'react';
+
+// const { loading, data, error } = useQuery(LOAD_JOURNAL);
+
+// // const [toggleState, setToggleState] = useState(1);
+
+// // const toggleTab = (index, event) => {
+// //   setToggleState(index);
+// //   event.preventDefault();
+// // };
+
+// // const getActiveClass = (index, className) =>
+// //   toggleState === index ? className : '';
+
+// if (loading) return <Loading />;
+// if (error) return <h1>Error</h1>;
