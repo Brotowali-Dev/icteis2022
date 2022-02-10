@@ -1,12 +1,12 @@
 /* eslint-disable array-callback-return */
-import React from "react";
-import GoogleMapReact from "google-map-react";
+import React from 'react';
+import GoogleMapReact from 'google-map-react'; // eslint-disable-line
 
 const markerStyle = {
-  position: "absolute",
-  top: "100%",
-  left: "50%",
-  transform: "translate(-50%, -100%)",
+  position: 'absolute',
+  top: '100%',
+  left: '50%',
+  transform: 'translate(-50%, -100%)',
 };
 
 class Map extends React.Component {
@@ -24,12 +24,12 @@ class Map extends React.Component {
     return (
       // Important! Always set the container height explicitly
       //   <div style={{ display: "flex", justifyContent: "center" }}>
-      <div className="cardContainer">
+      <div className='cardContainer'>
         <h1>Conference Venue?</h1>
-        <div className="map-container">
+        <div className='map-container'>
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: "AIzaSyA16d9FJFh__vK04jU1P64vnEpPc3jenec",
+              key: 'AIzaSyA16d9FJFh__vK04jU1P64vnEpPc3jenec',
             }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
@@ -39,19 +39,19 @@ class Map extends React.Component {
                 return item.address.map((i) => {
                   return (
                     <a
-                      href="https://goo.gl/maps/tLmb2LJmrXGwCpz9A"
+                      href='https://goo.gl/maps/tLmb2LJmrXGwCpz9A'
                       key={i.id}
                       lat={i.lat}
                       lng={i.lng}
-                      target="_blank"
-                      rel="noreferrer"
+                      target='_blank'
+                      rel='noreferrer'
                     >
                       <img
                         style={markerStyle}
                         height={32}
                         width={32}
-                        src="/assets/pin.svg"
-                        alt="pin"
+                        src='/assets/pin.svg'
+                        alt='pin'
                       />
                     </a>
                   );

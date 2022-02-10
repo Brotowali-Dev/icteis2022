@@ -40,9 +40,6 @@ function Hero() {
           </a>
         </div>
       </div>
-      <div className='image-container'>
-        <img src={data.landingPages[0].heroImage.url} alt='heroSatu' />
-      </div>
     </section>
   );
 }

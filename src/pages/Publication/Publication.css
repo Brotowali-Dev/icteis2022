@@ -223,6 +223,9 @@ aside {
   .publication-hero {
     padding: 90px 32px;
   }
+  .publications-wrapper {
+    flex-direction: column;
+  }
   .publication-container {
     padding: 0 32px;
   }

@@ -93,9 +93,6 @@ const AbstractGuideline = () => {
             {/* End Review Process */}
           </div>
           <div className='sidebar'>
-            <div className='guideline-links'>
-              <img src='/assets/copylink.svg' alt='copylink' /> Copy Link
-            </div>
             <div className='linksTitle'>Other Guideline</div>
             <Link to='/full-paper-guideline' className='guideline-links'>
               <img src='/assets/Frame.svg' alt='copylink' /> Full Paper
