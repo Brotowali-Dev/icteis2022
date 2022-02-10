@@ -9,7 +9,7 @@ import Hero from '../../components/Hero';
 import Partnership from '../../components/Partnership';
 import Speakers from '../../components/Speakers';
 import Reviewers from '../../components/Reviewers';
-import ImportantDates from '../../components/ImportantDates';
+// import ImportantDates from '../../components/ImportantDates';
 // import CallForPaper from "../../components/CallForPaper";
 import Loading from '../../components/Loading';
 import Jumper from '../../components/Jumper'; // eslint-disable-line
@@ -118,7 +118,7 @@ const Homepage = () => {
         {/* END OVERVIEW SECTION */}
 
         {/* IMPORTANT DATES SECTION */}
-        <ImportantDates />
+        {/* <ImportantDates /> */}
         {/* END IMPORTANT DATES SECTION */}
       </div>
 
